@@ -1,0 +1,347 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IBR_SJK_S030
+</name>
+</assembly>
+<members>
+<member name="P:IBR_SJK_S030.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:IBR_SJK_S030.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:IBR_SJK_S030.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="P:IBR_SJK_S030.IBR_SJK_S030_010.OutputData">
+	<summary>
+ [OUT]連携情報
+ </summary>
+	<returns></returns>
+</member><member name="P:IBR_SJK_S030.IBR_SJK_S030_010.ShukkaBasho">
+	<summary>
+ [IN]出荷場所
+ </summary>
+</member><member name="P:IBR_SJK_S030.IBR_SJK_S030_010.SearchCondition">
+	<summary>
+ 前回検索条件を保存する
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_010.SelectShukkaData(IBR_SKS_C001.IbrData,System.Object)">
+	<summary>
+ 検索画面を表示し、連携情報を返却します
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="shukkaBasho">[IN]出荷場所</param>
+	<returns>選択結果</returns>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_010.SearchCondition_SettingControlValue(System.Windows.Forms.Control,System.ComponentModel.HandledEventArgs)">
+	<summary>
+ 検索条件項目の値取得処理
+ </summary>
+	<param name="target"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_010.ComDataGridViewSjk1_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ 一覧のダブルクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_010.ComDataGridViewSjk1_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ 一覧のKeyDownイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_010.SetOutputData">
+	<summary>
+ OUT引数編集処理
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IBR_SJK_S030.OutputData.ShukkaBasho">
+	<summary>出荷場所</summary>
+</member><member name="P:IBR_SJK_S030.OutputData.ShukkaDt">
+	<summary>出荷日</summary>
+</member><member name="P:IBR_SJK_S030.OutputData.Bin">
+	<summary>便</summary>
+</member><member name="P:IBR_SJK_S030.OutputData.YusoGyosya">
+	<summary>輸送業者</summary>
+</member><member name="P:IBR_SJK_S030.OutputData.Nouki">
+	<summary>納期</summary>
+</member><member name="P:IBR_SJK_S030.OutputData.NohinshoNo">
+	<summary>納品書No</summary>
+</member><member name="P:IBR_SJK_S030.OutputData.GyoNo">
+	<summary>行No</summary>
+</member><member name="P:IBR_SJK_S030.OutputData.SeqNo">
+	<summary>SEQ-NO</summary>
+</member><member name="P:IBR_SJK_S030.OutputData.ShukkaSuryo">
+	<summary>出荷数量</summary>
+</member><member name="T:IBR_SJK_S030.OutputData">
+	<summary>
+ 出荷データ検索画面連携情報
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetDataSet(IBR_SKS_C001.IbrData,System.Int32,System.Boolean,System.String,System.String,System.Decimal,System.Decimal,System.String,System.DateTime,System.String,System.Decimal@,System.String@)">
+	<summary>
+ データ取得共通処理メイン
+ </summary>
+	<returns>index 0 =&gt;DataSet(エラー情報含む), index 1 =&gt; SUB999のパラメータ</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.callSUB999(IBR_SKS_C001.IbrData,System.Int32,System.Data.DataTable)">
+	<summary>
+ 部品情報取得処理(SUB999)をCALLする
+ </summary>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetMMCSL2(IBR_SKS_C001.IbrData,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.Decimal)">
+	<summary>
+ 検索条件より出荷容器管理ファイル(MMCSL2)を検索する
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="shukkaBasho">出荷場所</param>
+	<param name="shukkaDt">出荷日</param>
+	<param name="binCd">便コード</param>
+	<param name="yusoGyosha">輸送業者</param>
+	<param name="tokuiCd">得意先</param>
+	<param name="bhnNo">部品番号</param>
+	<param name="tanCd">担当者</param>
+	<returns>出荷容器管理ファイル検索結果</returns>
+	<remarks>存在しない場合はNothingを返却する</remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetJYUZAN(IBR_SKS_C001.IbrData,System.Int32)">
+	<summary>
+ 受注番号より受注残ファイルを取得する
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="juchuNo">行番号</param>
+	<returns>受注残ファイル検索結果</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetJYUZAN(IBR_SKS_C001.IbrData,System.String,System.String,System.String)">
+	<summary>
+ 納品書番号より受注残ファイルを取得する
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="makerKbn">メーカー区分</param>
+	<param name="nohinshoNo">納品書番号</param>
+	<param name="gyoNo">納品書行番号</param>
+	<returns>受注残ファイル検索結果レコード</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetMMCJZF(IBR_SKS_C001.IbrData,System.String,System.String)">
+	<summary>
+ 納品書番号よりMMC受注残ファイルを取得する
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="nohinshoNo">納品書番号</param>
+	<param name="gyoNo">納品書行番号</param>
+	<returns>MMC受注残ファイル検索結果レコード</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetDummyMMCJZF(IBR_SKS_C001.IbrData,System.Data.DataRow)">
+	<summary>
+ 自社受注残ファイルからMMC受注残ファイルを取得する
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="drJYUZAN">自社受注残ファイル</param>
+	<returns>MMC受注残ファイル</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetJTCJZF(IBR_SKS_C001.IbrData,System.String)">
+	<summary>
+ 発行NO(納品書番号)よりJATCO受注残ファイルを取得する
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="hakkoNo">発行NO</param>
+	<returns>JATCO受注残ファイル検索結果レコード</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetMMCSL2(IBR_SKS_C001.IbrData,System.String,System.String,System.Decimal)">
+	<summary>
+ 出荷容器管理ファイルを読み込む
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="nohinshoNo">納品書番号</param>
+	<param name="gyoNo">納品書行番号</param>
+	<param name="seqNo">SEQ-NO</param>
+	<returns>出荷容器管理ファイル検索結果レコード</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetMMCSRI(IBR_SKS_C001.IbrData,System.String,System.String,System.Decimal)">
+	<summary>
+ 出荷容器累積ファイルを読み込む
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="nohinshoNo">納品書番号</param>
+	<param name="gyoNo">納品書行番号</param>
+	<param name="seqNo">SEQ-NO</param>
+	<returns>出荷容器累積ファイル検索結果レコード</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_001.GetMMCSLG(IBR_SKS_C001.IbrData,System.String,System.DateTime,System.String,System.String,System.String)">
+	<summary>
+ MMC出荷ログファイルを取得する
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="bashoCd">出荷場所</param>
+	<param name="shukkaDt">出荷日</param>
+	<param name="binCd">便</param>
+	<param name="nohinshoNo">納品書番号</param>
+	<param name="gyoNo">納品書行番号</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:IBR_SJK_S030.IBR_SJK_S030_001">
+	<summary>
+ データ取得IBR_SJK_S030, IBR_SJK_S040共通ロジック
+ </summary>
+</member><member name="F:IBR_SJK_S030.IBR_SJK_S030_000.DataSet">
+	<summary>
+ 画面入力に対応するDataSet
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IBR_SJK_S030.IBR_SJK_S030_000.InputState">
+	<summary>
+ 入力状態ステータス
+ </summary>
+</member><member name="P:IBR_SJK_S030.IBR_SJK_S030_000.CalcShuyoSu">
+	<summary>
+ 計算用―収容数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:IBR_SJK_S030.IBR_SJK_S030_000.EnumInputState.Mode">
+	<summary>モード入力中</summary>
+</member><member name="F:IBR_SJK_S030.IBR_SJK_S030_000.EnumInputState.ShukkaInput">
+	<summary>出荷情報入力中</summary>
+</member><member name="F:IBR_SJK_S030.IBR_SJK_S030_000.EnumInputState.DelMode">
+	<summary>削除モード</summary>
+</member><member name="T:IBR_SJK_S030.IBR_SJK_S030_000.EnumInputState">
+	<summary>
+ 入力状態ステータス列挙体
+ </summary>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.InitControl(System.Boolean)">
+	<summary>
+ 全コントロールの初期化処理
+ </summary>
+	<param name="onFormLoad">Form Load時の呼び出し</param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.O_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ ラジオボタンの値変更イベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.D_Syukka_CheckingItem(System.Windows.Forms.Control,System.Boolean,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ 出荷日の入力チェック
+ </summary>
+	<param name="target"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ (納期横の)検索ボタン押下イベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.T_Barcode_CheckingItem(System.Windows.Forms.Control,System.Boolean,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ バーコードの入力チェック
+ </summary>
+	<param name="target"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.T_Barcode_SettingControlValue(System.Windows.Forms.Control,System.ComponentModel.HandledEventArgs)">
+	<summary>
+ バーコードの値設定処理
+ </summary>
+	<param name="target"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.T_NohinshoLine_CheckingItem(System.Windows.Forms.Control,System.Boolean,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ 行番号の入力チェック
+ </summary>
+	<param name="target"></param>
+	<param name="onExecute"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.N_SeqNo_Validated(System.Windows.Forms.Control,System.Boolean,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ 入力領域が変わる時の日付入力チェック
+ </summary>
+	<param name="target"></param>
+	<param name="onExecute"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.N_SeqNo_InittingControl(System.Windows.Forms.Control,System.Boolean,System.ComponentModel.HandledEventArgs)">
+	<summary>
+ SEQ-NOの初期化処理
+ </summary>
+	<param name="target"></param>
+	<param name="onFormLoad"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.N_SeqNo_SettingControlValue(System.Windows.Forms.Control,System.ComponentModel.HandledEventArgs)">
+	<summary>
+ SEQ-NOの値設定処理
+ </summary>
+	<param name="target"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.N_KonkaiShukkaSuryo_CheckingItem(System.Windows.Forms.Control,System.Boolean,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ 今回出荷数の入力チェック
+ </summary>
+	<param name="target"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.N_KonkaiShukkaSuryo_SettingControlValue(System.Windows.Forms.Control,System.ComponentModel.HandledEventArgs)">
+	<summary>
+ 今回出荷数の値設定処理
+ </summary>
+	<param name="target"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.C_KannouKbn_NeedComboSource(System.Data.DataTable,System.EventArgs)">
+	<summary>
+ 完納区分コンボボックスのDataSource作成イベント
+ </summary>
+	<param name="table"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.C_KannouKbn_CheckingItem(System.Windows.Forms.Control,System.Boolean,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ 完納区分コンボボックスの入力チェック
+ </summary>
+	<param name="target"></param>
+	<param name="e"></param>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.updateEnabled">
+	<summary>
+ コントロールのEnabled制御
+ </summary>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.showDataSet(System.Boolean,System.Decimal,System.Decimal)">
+	<summary>
+ データを画面に表示する
+ </summary>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.ExecuteMain">
+	<summary>
+ 更新処理メイン
+ </summary>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.setUpdParamMMCSL2(System.Data.DataTable,System.DateTime)">
+	<summary>
+ MMC出荷容器管理ファイル更新用パラメータを画面から取得します
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.setUpdParamXXXJZF(System.Data.DataTable,System.DateTime)">
+	<summary>
+ {MMC・JATCO}受注残ファイル更新用パラメータを画面から取得します
+ </summary>
+	<param name="updDt"></param>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.setUpdParamJYUZAN(System.Data.DataTable,System.DateTime)">
+	<summary>
+ 自社受注残ファイル更新用パラメータを画面から取得します
+ </summary>
+	<param name="updDt"></param>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_S030.IBR_SJK_S030_000.setUpdParamMMCSLG(System.Data.DataTable,System.DateTime)">
+	<summary>
+ MMC出荷ログファイル更新用パラメータを取得します
+ </summary>
+	<param name="updDt"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,2602 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IBR_SJK_C020
+</name>
+</assembly>
+<members>
+<member name="T:IBR_SJK_C020.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:IBR_SJK_C020.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:IBR_SJK_C020.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:IBR_SJK_C020.IbrCom.PnlJyotai">
+ <summary>
+ 画面制御区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IBR_SJK_C020.IbrCom.GamenBtn">
+ <summary>
+ 画面処理区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IBR_SJK_C020.IbrCom.MsgINFO">
+ <summary>
+ エラー情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.BatSysErr(System.String@,System.String@,System.String@,System.Int32@,System.String@)">
+ <summary>
+ エラーログ出力
+ </summary>
+ <param name="strPrgID"></param>
+ <param name="strPrnNM"></param>
+ <param name="strPrcNm"></param>
+ <param name="lngErrNo"></param>
+ <param name="strErrMsg"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.txt_CHG(System.Windows.Forms.Panel,System.Boolean,System.Boolean)">
+ <summary>
+ パネル内の項目制御処理
+ </summary>
+ <param name="pPnl">対象パネル</param>
+ <param name="pEnabled">Enabled</param>
+ <param name="pClear">true:クリアする、false:クリアしない</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.LeftB(System.String,System.Int32)">
+ <summary>
+ バイト切り出し(LeftB)
+ </summary>
+ <param name="stTarget"></param>
+ <param name="iByteSize"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.MidB(System.String,System.Int32,System.Int32)">
+ <summary>
+ バイト切り出し(MidB)
+ </summary>
+ <param name="stTarget"></param>
+ <param name="iStart"></param>
+ <param name="iByteSize"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.MidB(System.String,System.Int32)">
+ <summary>
+ バイト切り出し(MidB)
+ </summary>
+ <param name="stTarget"></param>
+ <param name="iStart"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.RightB(System.String,System.Int32)">
+ <summary>
+ バイト切り出し(RightB)
+ </summary>
+ <param name="stTarget"></param>
+ <param name="iByteSize"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.GetByte(System.String)">
+ <summary>
+ バイト切り出し(RightB)
+ </summary>
+ <param name="stTarget"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.LenB(System.String)">
+ <summary>
+ 文字列のバイト数を取得する
+ </summary>
+ <param name="Str">文字列</param>
+ <returns>取り出した文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.Message(System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+ <summary>
+ エラーメッセージ表示
+ </summary>
+ <param name="Q_MSG"></param>
+ <param name="Q_BTN"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.IbrCom.MsgWirteLog(System.String@)">
+ <summary>
+ ログ出力
+ </summary>
+ <param name="strErrMsg"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.StartUpModule.StartProc">
+ <summary>
+ プログラム開始処理(メニューで使用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.StartUpModule.InitProc(System.String[])">
+ <summary>
+ プログラム初期処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.StartUpModule.Make_IbrDataCom(Oracle.DataAccess.Client.OracleConnection@,Oracle.DataAccess.Client.OracleCommand@)">
+ <summary>
+ データコントロール作成
+ </summary>
+ <param name="Q_con"></param>
+ <param name="Q_com"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.StartUpModule.Get_Ini(System.String,System.String,System.String)">
+ <summary>
+ ｉｎｉ取得
+ </summary>
+ <param name="Q_File"></param>
+ <param name="Q_Sess"></param>
+ <param name="Q_Key"></param>
+ <returns></returns>
+ <remarks>ｉｎｉファイル読込</remarks>
+</member>
+<member name="M:IBR_SJK_C020.StartUpModule.Set_Ini(System.String,System.String,System.String,System.String)">
+ <summary>
+ ｉｎｉ更新
+ </summary>
+ <param name="Q_File"></param>
+ <param name="Q_Sess"></param>
+ <param name="Q_Key"></param>
+ <remarks>ｉｎｉファイル更新</remarks>
+</member>
+<member name="M:IBR_SJK_C020.StartUpModule.StartProc2">
+ <summary>
+ プログラム開始処理(メニューで使用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComCheckBoxSjk.defaultCheckedValue">
+ <summary>
+ Checked値の初期値
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComCheckBoxSjk.OnEnter(System.EventArgs)">
+ <summary>
+ Enterイベント時、強調表示
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComCheckBoxSjk.OnLeave(System.EventArgs)">
+ <summary>
+ Leaveイベント時、強調表示解除
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComCheckBoxSjk.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ KeyDownイベント時、Enterでフォーカス遷移
+ </summary>
+ <param name="kevent"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComCheckBoxSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComCheckBoxSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComCheckBoxSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComCheckBoxSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComCheckBoxSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComCheckBoxSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComCheckBoxSjk.ValueRef">
+ <summary>
+ =Checked
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComCheckBoxSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComCheckBoxSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComCheckBoxSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComCheckBoxSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="T:IBR_SJK_C020.ComComboBoxControlDesigner">
+ <summary>
+ ComComboBoxSjk用のコントロールデザイナ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IBR_SJK_C020.ComComboBoxDesignerActionList">
+ <summary>
+ コード入力コントロールインターフェース用のデザイナアクションリスト
+ </summary>
+</member>
+<member name="M:IBR_SJK_C020.ComComboBoxDesignerActionList.GetSortedActionItems">
+ <summary>
+ スマートタグのリスト項目の一覧を返却する
+ </summary>
+ <returns></returns>
+</member>
+<member name="E:IBR_SJK_C020.ComDataGridViewSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComDataGridViewSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComDataGridViewSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComDataGridViewSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComDataGridViewSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComDataGridViewSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComDataGridViewSjk.ValueRef">
+ <summary>
+ =Text
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.CheckIfForwardOnly">
+ <summary>
+ Trueの場合フォーカスが前方に遷移する場合のみ入力チェックを行います。
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.FocusedControl">
+ <summary>
+ 直前にフォーカスしていたコントロール(フォーカス制御に使用する。)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.InitialControl">
+ <summary>
+ 初期フォーカスをセットするコントロール
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.LoginUser">
+ <summary>
+ ログインユーザ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.LoginUserNm">
+ <summary>
+ ログインユーザ名
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.MsgTitle">
+ <summary>
+ メッセージボックスに表示するタイトル
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.ConnCreateFlg">
+ <summary>
+ True:画面開始時に接続を作成 <BR/>
+ False:引数として接続を受け取った場合
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Trueの場合、FormのClose時に接続をCloseする</remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.CreateParams">
+ <summary>
+ ×ボタン無効化
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.OnLoad(System.EventArgs)">
+ <summary>
+ Loadイベント時、引数から接続情報・ログイン情報を初期化する。トランザクション開始
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.OnClosed(System.EventArgs)">
+ <summary>
+ Closeイベント時、コネクション解放
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.Control_Enter(System.Object,System.EventArgs)">
+ <summary>
+ 全コントロールのEnterイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.Control_Validating(System.Object,System.ComponentModel.CancelEventArgs)">
+ <summary>
+ 全コントロールのValidatingイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.Control_Validated(System.Object,System.EventArgs)">
+ <summary>
+ 全コントロールのValidatedイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.Application_ThreadException(System.Object,System.Threading.ThreadExceptionEventArgs)">
+ <summary>
+ 未処理例外をキャッチするイベントハンドラ(メインスレッド)
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.Application_UnhandledException(System.Object,System.UnhandledExceptionEventArgs)">
+ <summary>
+ 未処理例外をキャッチするイベントハンドラ(別スレッド)
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.InitControlsEvent">
+ <summary>
+ 全コントロールへのイベント登録<BR/>
+ ①Enterイベント(FocusedControl更新・F1ボタンEnabled制御)<BR/>
+ ②Validatingイベントで入力チェック(CheckItem)<BR/>
+ ③Validatedイベントでコード名称取得(SetControlValue)<BR/>
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.GetForwardControls(System.Windows.Forms.Control)">
+ <summary>
+ targetの後方にフォーカス位置のあるコントロールを取得する
+ </summary>
+ <param name="target"></param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.OutPutLogErr(System.Exception)">
+ <summary>
+ エラーログをイベントビュアーに出力
+ </summary>
+ <param name="e">Exceptionオブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.InfomationMessage(System.String)">
+ <summary>
+ 情報メッセージを表示する。
+ </summary>
+ <param name="msg">表示メッセージ</param>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.ConfirmMessage(System.String,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+ <summary>
+ 確認メッセージを表示する。
+ </summary>
+ <param name="msg">表示メッセージ</param>
+ <param name="defaultButton">フォーカスするボタン</param>
+ <returns>True:Yes</returns>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.WarnMessage(System.String)">
+ <summary>
+ 警告メッセージを表示する。
+ </summary>
+ <param name="msg">表示メッセージ</param>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.ErrorMessage(System.String)">
+ <summary>
+ エラーメッセージを表示する。
+ </summary>
+ <param name="msg">表示メッセージ</param>
+</member>
+<member name="E:IBR_SJK_C020.ComFormSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComFormSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComFormSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComFormSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.ValueRef">
+ <summary>
+ =Text
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComFormSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="M:IBR_SJK_C020.ComFormSjk.ComControls(System.Boolean)">
+ <summary>
+ 子コントロールを列挙します
+ </summary>
+ <param name="nested">
+ True:子コントロールがContainerの場合に、その子コントロールまで列挙します。<BR/>
+ (Containerコントロールは結果から除外されます。)<BR/>
+ </param>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.Common.ControlBackColorDisplay">
+ <summary>
+ コントロールの背景色-読取専用
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.Common.GridBackColorOdd">
+ <summary>
+ DataGridView奇数行背景色
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.Common.GridBackColorEven">
+ <summary>
+ DataGridView偶数行背景色
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.Common.ShowRequiredError(System.String)">
+ <summary>
+ 必須チェックエラーメッセージを表示する。
+ </summary>
+ <param name="displayName">エラー表示名</param>
+</member>
+<member name="M:IBR_SJK_C020.Common.ShowExistError(System.String)">
+ <summary>
+ マスター存在チェックエラーメッセージを表示する。
+ </summary>
+ <param name="displayName">エラー表示名</param>
+</member>
+<member name="M:IBR_SJK_C020.Common.IsExistMaster(IBR_SKS_C001.IbrData,IBR_SJK_C020.ICodeInputControl.EnumCode,System.String,System.String)">
+ <summary>
+ 存在チェックを行う。
+ </summary>
+ <param name="ibr">接続情報</param>
+ <param name="codeType">コード種別</param>
+ <param name="value">コード値</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.Common.SearchCode(IBR_SKS_C001.IbrData,System.Windows.Forms.Control)">
+ <summary>
+ コード検索処理メイン
+ </summary>
+ <param name="target">対象コントロール</param>
+</member>
+<member name="M:IBR_SJK_C020.Common.SearchCode(IBR_SKS_C001.IbrData,System.Windows.Forms.DataGridViewTextBoxCell)">
+ <summary>
+ コード検索処理メイン
+ </summary>
+ <param name="target">対象コントロール</param>
+</member>
+<member name="M:IBR_SJK_C020.Common.GetNameFromMaster(IBR_SKS_C001.IbrData,IBR_SJK_C020.ICodeInputControl.EnumCode,System.String,System.String,System.String)">
+ <summary>
+ マスターから名称取得処理
+ </summary>
+ <param name="ibr">接続情報</param>
+ <param name="codeType">種別</param>
+ <param name="value">値</param>
+ <param name="subValue">補助コード</param>
+ <param name="subValue">名称項目</param>
+ <returns>名称</returns>
+ <remarks>存在しない場合Nothingを返却する(名称未設定の場合は空文字)</remarks>
+</member>
+<member name="M:IBR_SJK_C020.Common.getSiki(IBR_SJK_C020.ICodeInputControl.EnumCode)">
+ <summary>
+ 名称検索のサブ引数を取得する
+ </summary>
+ <param name="code"></param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComTabControlSjk.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)">
+ <summary>
+ TABコントロールのOwnerDraw処理
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="E:IBR_SJK_C020.ComTabControlSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComTabControlSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComTabControlSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComTabControlSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComTabControlSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComTabControlSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComTabControlSjk.ValueRef">
+ <summary>
+ =Text
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComTabControlSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComTabControlSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComTabControlSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComTabControlSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="M:IBR_SJK_C020.ComTabControlSjk.ComControls(System.Boolean)">
+ <summary>
+ 子コントロールを列挙します
+ </summary>
+ <param name="nested">
+ True:子コントロールがContainerの場合に、その子コントロールまで列挙します。<BR/>
+ (Containerコントロールは結果から除外されます。)<BR/>
+ </param>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns>接続情報</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.ValueRef">
+ <summary>
+ 値参照プロパティ
+ </summary>
+ <returns>値参照プロパティ</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.CodeType">
+ <summary>
+ コード種別
+ </summary>
+ <value>コード種別</value>
+ <returns>コード種別</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.CanSearch">
+ <summary>
+ コード検索画面を使用可能
+ </summary>
+ <value>コード検索画面を使用可能</value>
+ <returns>コード検索画面を使用可能</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.IsCheckRequired">
+ <summary>
+ 必須入力項目
+ </summary>
+ <value>必須入力項目</value>
+ <returns>必須入力項目</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.IsCheckExists">
+ <summary>
+ マスター存在チェック項目
+ </summary>
+ <value>マスター存在チェック項目</value>
+ <returns>マスター存在チェック項目</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.DisplayName">
+ <summary>
+ メッセージ表示に使用するコントロール名
+ </summary>
+ <value>メッセージ表示に使用するコントロール名</value>
+ <returns>メッセージ表示に使用するコントロール名</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.NameColumn">
+ <summary>
+ 名称表示用コントロール
+ </summary>
+ <value>名称表示用コントロール</value>
+ <returns>名称表示用コントロール</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewCellSjk.NameItem">
+ <summary>
+ 名称表示用項目名
+ </summary>
+ <value>名称表示用項目名</value>
+ <returns>名称表示用項目名</returns>
+</member>
+<member name="M:IBR_SJK_C020.IDataGridViewCellSjk.SearchCode(IBR_SKS_C001.IbrData)">
+ <summary>
+ コード検索を実行し、表示内容を更新します。
+ </summary>
+ <param name="ibr"></param>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComDateCellSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComDateCellSjk.InitializeEditingControl(System.Int32,System.Object,System.Windows.Forms.DataGridViewCellStyle)">
+ <summary>
+ 編集コントロールの初期化処理
+ 編集コントロールは別のセルや列でも使いまわされるため、初期化の必要がある
+ </summary>
+ <param name="rowIndex"></param>
+ <param name="initialFormattedValue"></param>
+ <param name="dataGridViewCellStyle"></param>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComDateCellSjk.EditType">
+ <summary>
+ 編集コントロールの型を指定する
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComDateCellSjk.ValueRef">
+ <summary>
+ =Value
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComDateEditingControlSjk._dataGridView">
+ <summary>
+ 編集コントロールが表示されているDataGridView
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComDateEditingControlSjk._rowIndex">
+ <summary>
+ 編集コントロールが表示されている行
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComDateEditingControlSjk._isValueChanged">
+ <summary>
+ 編集コントロールの値とセルの値が違うかどうか
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComDateEditingControlSjk.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)">
+ <summary>
+ セルスタイルを編集コントロールに適用する
+ 編集コントロールの前景色、背景色、フォントなどをセルスタイルに合わせる
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComDateEditingControlSjk.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)">
+ <summary>
+ 引数キーをDataGridViewが処理するかEditコントロールが処理するかを指定する
+ </summary>
+ <param name="keyData"></param>
+ <param name="dataGridViewWantsInputKey"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComNumberCellSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComNumberCellSjk.InitializeEditingControl(System.Int32,System.Object,System.Windows.Forms.DataGridViewCellStyle)">
+ <summary>
+ 編集コントロールの初期化処理
+ 編集コントロールは別のセルや列でも使いまわされるため、初期化の必要がある
+ </summary>
+ <param name="rowIndex"></param>
+ <param name="initialFormattedValue"></param>
+ <param name="dataGridViewCellStyle"></param>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComNumberCellSjk.EditType">
+ <summary>
+ 編集コントロールの型を指定する
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComNumberCellSjk.ValueRef">
+ <summary>
+ =Value
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComNumberEditingControlSjk._dataGridView">
+ <summary>
+ 編集コントロールが表示されているDataGridView
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComNumberEditingControlSjk._rowIndex">
+ <summary>
+ 編集コントロールが表示されている行
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComNumberEditingControlSjk._isValueChanged">
+ <summary>
+ 編集コントロールの値とセルの値が違うかどうか
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComNumberEditingControlSjk.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)">
+ <summary>
+ セルスタイルを編集コントロールに適用する
+ 編集コントロールの前景色、背景色、フォントなどをセルスタイルに合わせる
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComNumberEditingControlSjk.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)">
+ <summary>
+ 引数キーをDataGridViewが処理するかEditコントロールが処理するかを指定する
+ </summary>
+ <param name="keyData"></param>
+ <param name="dataGridViewWantsInputKey"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComTextCellSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComTextCellSjk.InitializeEditingControl(System.Int32,System.Object,System.Windows.Forms.DataGridViewCellStyle)">
+ <summary>
+ 編集コントロールの初期化処理
+ 編集コントロールは別のセルや列でも使いまわされるため、初期化の必要がある
+ </summary>
+ <param name="rowIndex"></param>
+ <param name="initialFormattedValue"></param>
+ <param name="dataGridViewCellStyle"></param>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComTextCellSjk.EditType">
+ <summary>
+ 編集コントロールの型を指定する
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.DataGridViewComTextCellSjk.ValueRef">
+ <summary>
+ =Value
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:IBR_SJK_C020.DataGridViewComTextEditingControlSjk">
+ <summary>
+ Editコントロール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComTextEditingControlSjk._dataGridView">
+ <summary>
+ 編集コントロールが表示されているDataGridView
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComTextEditingControlSjk._rowIndex">
+ <summary>
+ 編集コントロールが表示されている行
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.DataGridViewComTextEditingControlSjk._isValueChanged">
+ <summary>
+ 編集コントロールの値とセルの値が違うかどうか
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComTextEditingControlSjk.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)">
+ <summary>
+ セルスタイルを編集コントロールに適用する
+ 編集コントロールの前景色、背景色、フォントなどをセルスタイルに合わせる
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.DataGridViewComTextEditingControlSjk.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)">
+ <summary>
+ 引数キーをDataGridViewが処理するかEditコントロールが処理するかを指定する
+ </summary>
+ <param name="keyData"></param>
+ <param name="dataGridViewWantsInputKey"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewColumnSjk.CodeType">
+ <summary>
+ コード種別
+ </summary>
+ <value>コード種別</value>
+ <returns>コード種別</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewColumnSjk.CanSearch">
+ <summary>
+ コード検索画面を使用可能
+ </summary>
+ <value>コード検索画面を使用可能</value>
+ <returns>コード検索画面を使用可能</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewColumnSjk.IsCheckRequired">
+ <summary>
+ 必須入力項目
+ </summary>
+ <value>必須入力項目</value>
+ <returns>必須入力項目</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewColumnSjk.IsCheckExists">
+ <summary>
+ マスター存在チェック項目
+ </summary>
+ <value>マスター存在チェック項目</value>
+ <returns>マスター存在チェック項目</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewColumnSjk.DisplayName">
+ <summary>
+ メッセージ表示に使用するコントロール名
+ </summary>
+ <value>メッセージ表示に使用するコントロール名</value>
+ <returns>メッセージ表示に使用するコントロール名</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewColumnSjk.NameColumn">
+ <summary>
+ 名称表示用コントロール
+ </summary>
+ <value>名称表示用コントロール</value>
+ <returns>名称表示用コントロール</returns>
+</member>
+<member name="P:IBR_SJK_C020.IDataGridViewColumnSjk.NameItem">
+ <summary>
+ 名称表示用項目名
+ </summary>
+ <value>名称表示用項目名</value>
+ <returns>名称表示用項目名</returns>
+</member>
+<member name="M:IBR_SJK_C020.IDataGridViewColumnSjk.SearchCode(IBR_SKS_C001.IbrData)">
+ <summary>
+ コード検索を実行し、表示内容を更新します。
+ </summary>
+ <param name="ibr"></param>
+</member>
+<member name="M:IBR_SJK_C020.IDataGridViewColumnSjk.Columns">
+ <summary>
+ DataGridViewに所属するColumnを列挙します
+ </summary>
+ <returns>DataGridViewに所属するColumn</returns>
+ <remarks></remarks>
+</member>
+<member name="T:IBR_SJK_C020.IComContainerSjk">
+ <summary>
+ ContainerControl共通インターフェース
+ </summary>
+</member>
+<member name="M:IBR_SJK_C020.IComContainerSjk.ComControls(System.Boolean)">
+ <summary>
+ 子コントロールを列挙します
+ </summary>
+ <param name="nested">
+ True:子コントロールがContainerの場合に、その子コントロールまで列挙します。<BR/>
+ (Containerコントロールは結果から除外されます。)<BR/>
+ </param>
+ <returns></returns>
+</member>
+<member name="T:IBR_SJK_C020.SmartTagAction">
+ <summary>
+ スマートタグ処理クラス
+ </summary>
+</member>
+<member name="M:IBR_SJK_C020.SmartTagAction.ChangeCodeTypeBySmartTag(IBR_SJK_C020.ICodeInputControl,IBR_SJK_C020.ICodeInputControl.EnumCode)">
+ <summary>
+ スマートタグによるコード種別の変更
+ </summary>
+ <param name="control">対象コントロール</param>
+ <param name="newCodeType">コード種別(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.SmartTagAction.SetNameControlBySmartTag(IBR_SJK_C020.ICodeInputControl,System.Windows.Forms.TextBox)">
+ <summary>
+ スマートタグによる名称コントロールの設定
+ </summary>
+ <param name="control">対象コントロール</param>
+ <param name="newNameControl">名称コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.SmartTagAction.SetSubControlBySmartTag(IBR_SJK_C020.ICodeInputControl,IBR_SJK_C020.IComControlSjk)">
+ <summary>
+ スマートタグによる補助入力コントロールの設定
+ </summary>
+ <param name="control">対象コントロール</param>
+ <param name="newSubControl">補助入力コントロール(新)</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.SmartTagAction.SetNameItemBySmartTag(IBR_SJK_C020.ICodeInputControl,System.String)">
+ <summary>
+ スマートタグによる名称項目の設定
+ </summary>
+ <param name="control">対象コントロール</param>
+ <param name="newNameItem">補助入力コントロール(新)</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.SmartTagAction.SetReadOnlyBySmartTag(IBR_SJK_C020.ICodeInputControl,System.Boolean)">
+ <summary>
+ スマートタグによるReadOnly属性の設定
+ </summary>
+ <param name="control">対象コントロール</param>
+ <param name="value">値</param>
+</member>
+<member name="M:IBR_SJK_C020.SmartTagAction.ResetDefault(System.Windows.Forms.TextBox)">
+ <summary>
+ プロパティを標準状態に復元
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComButtonSjk.InittingControl">
+ <summary>
+ 値初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComButtonSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComButtonSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComButtonSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComButtonSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComButtonSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComButtonSjk.ValueRef">
+ <summary>
+ =Text
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComButtonSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComButtonSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComButtonSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComButtonSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComCombBoxSjk.NeedComboSource">
+ <summary>
+ コンボボックスのDataSource要求イベント<BR/>
+ tableのCODE列にコード値を、NAME列に名称を設定して下さい。<BR/>
+ </summary>
+ <param name="table"></param>
+ <param name="e"></param>
+</member>
+<member name="T:IBR_SJK_C020.ComCombBoxSjk.EnumComboSource">
+ <summary>
+ DataSource一覧
+ </summary>
+</member>
+<member name="F:IBR_SJK_C020.ComCombBoxSjk.EnumComboSource.Custom">
+ <summary>独自設定</summary>
+</member>
+<member name="F:IBR_SJK_C020.ComCombBoxSjk.EnumComboSource.Kojo">
+ <summary>工場</summary>
+</member>
+<member name="F:IBR_SJK_C020.ComCombBoxSjk.EnumComboSource.Line">
+ <summary>ライン</summary>
+</member>
+<member name="P:IBR_SJK_C020.ComCombBoxSjk.CodeType">
+ <summary>
+ コード種別を指定します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComCombBoxSjk.AddEmpty">
+ <summary>
+ コード種別を指定します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComCombBoxSjk.NameControl">
+ <summary>
+ ReadOnly時名称表示用のコントロール
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComCombBoxSjk.DisplayName">
+ <summary>
+ メッセージ表示に使用するコントロール名
+ </summary>
+ <value>メッセージ表示に使用するコントロール名</value>
+ <returns>メッセージ表示に使用するコントロール名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComCombBoxSjk.IsCheckRequired">
+ <summary>
+ 必須入力項目
+ </summary>
+ <value>必須入力項目</value>
+ <returns>必須入力項目</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComCombBoxSjk.CreateComboSource">
+ <summary>
+ コンボボックスのデータを作成する
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComCombBoxSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComCombBoxSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComCombBoxSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComCombBoxSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComCombBoxSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComCombBoxSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComCombBoxSjk.ValueRef">
+ <summary>
+ =SelectedValue
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComCombBoxSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComCombBoxSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComCombBoxSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComCombBoxSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="T:IBR_SJK_C020.CodeInputControlDesigner">
+ <summary>
+ コード入力コントロールインターフェース用のコントロールデザイナ
+ </summary>
+</member>
+<member name="T:IBR_SJK_C020.CodeInputControlDesignerActionList">
+ <summary>
+ コード入力コントロールインターフェース用のデザイナアクションリスト
+ </summary>
+</member>
+<member name="M:IBR_SJK_C020.CodeInputControlDesignerActionList.GetSortedActionItems">
+ <summary>
+ スマートタグのリスト項目の一覧を返却する
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:IBR_SJK_C020.ComDataGridViewExSjk">
+ <summary>
+ 明細入力に対応したComDataGridViewSjkコントロール
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComDataGridViewExSjk.LastCellEnterPressed">
+ <summary>
+ Gridの最終項目でEnter押下イベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.ComDataGridViewExSjk._isEnter">
+ <summary>
+ Enterキー押下時処理中フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.ComDataGridViewExSjk._isMove">
+ <summary>
+ 移動処理中フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:IBR_SJK_C020.ComDataGridViewExSjk.CheckingGridCellValue">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="formattedValue">チェック値</param>
+ <param name="rowIndex">行</param>
+ <param name="columnIndex">列</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComDataGridViewExSjk.CheckingGridRow">
+ <summary>
+ 入力チェック(行)用イベント
+ </summary>
+ <param name="rowIndex">行</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComDataGridViewExSjk.SettingGridCellValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.CheckItem(System.Boolean)">
+ <summary>
+ DataGridViewの入力チェック処理
+ </summary>
+ <param name="onExecute"></param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.OnCellValueChanged(System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ 編集中のセルの値が外部から変更された場合、編集中のコントロールに反映する
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.CheckGridItem(System.Boolean,System.Object,System.Int32,System.Int32)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns>True:チェックOK</returns>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.SetGridCellValue(System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.ProcessDialogKey(System.Windows.Forms.Keys)">
+ <summary>
+ ENTERキーでフォーカス移動制御
+ </summary>
+ <param name="keyData"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.ProcessDialogKeyPublic(System.Windows.Forms.Keys)">
+ <summary>
+ ProcessDialogKeyを外部に公開する用のIF
+ </summary>
+ <param name="keyData"></param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.ProcessDataGridViewKey(System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ENTERキーでフォーカス移動制御
+ </summary>
+ <param name="e"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.ProcessRightKey(System.Windows.Forms.Keys)">
+ <summary>
+ 右方向フォーカス移動処理
+ </summary>
+ <param name="keyData"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComDataGridViewExSjk.ProcessLeftKey(System.Windows.Forms.Keys)">
+ <summary>
+ 左方向フォーカス移動制御
+ </summary>
+ <param name="keyData"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="E:IBR_SJK_C020.ComDateSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComDateSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComDateSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComDateSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.ValueRef">
+ <summary>
+ =Value
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComDateSjk.QuerySearchCode">
+ <summary>
+ コード検索イベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.CodeType">
+ <summary>
+ コード種別
+ </summary>
+ <value>コード種別</value>
+ <returns>コード種別</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.CanSearch">
+ <summary>
+ コード検索画面を使用可能
+ </summary>
+ <value>コード検索画面を使用可能</value>
+ <returns>コード検索画面を使用可能</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.DisplayName">
+ <summary>
+ メッセージ表示に使用するコントロール名
+ </summary>
+ <value>メッセージ表示に使用するコントロール名</value>
+ <returns>メッセージ表示に使用するコントロール名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.IsCheckExists">
+ <summary>
+ マスター存在チェック項目
+ </summary>
+ <value>マスター存在チェック項目</value>
+ <returns>マスター存在チェック項目</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.IsCheckRequired">
+ <summary>
+ 必須入力項目
+ </summary>
+ <value>必須入力項目</value>
+ <returns>必須入力項目</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.NameControl">
+ <summary>
+ 名称表示用コントロール
+ </summary>
+ <value>名称表示用コントロール</value>
+ <returns>名称表示用コントロール</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.SubControl">
+ <summary>
+ 補助入力コントロール
+ </summary>
+ <value>補助入力コントロール</value>
+ <returns>補助入力コントロール</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.NameItem">
+ <summary>
+ 名称表示用項目名
+ </summary>
+ <value>名称表示用項目名</value>
+ <returns>名称表示用項目名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk.IsReadOnlyControl">
+ <summary>
+ 読取専用コントロール
+ </summary>
+ <value>読取専用コントロール</value>
+ <returns>読取専用コントロール</returns>
+</member>
+<member name="P:IBR_SJK_C020.ComDateSjk._smartTagAction">
+ <summary>
+ スマートタグによる処理実行クラス
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.ChangeCodeTypeBySmartTag(IBR_SJK_C020.ICodeInputControl.EnumCode)">
+ <summary>
+ スマートタグによるコード種別の変更
+ </summary>
+ <param name="newCodeType">コード種別(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.SetNameControlBySmartTag(System.Windows.Forms.TextBox)">
+ <summary>
+ スマートタグによる名称コントロールの設定
+ </summary>
+ <param name="newNameControl">名称コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.SetSubControlBySmartTag(IBR_SJK_C020.IComControlSjk)">
+ <summary>
+ スマートタグによる補助コントロールの設定
+ </summary>
+ <param name="newSubControl">補助コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.SetNameItemBySmartTag(System.String)">
+ <summary>
+ スマートタグによる名称項目名の設定
+ </summary>
+ <param name="newNameItem">名称項目名(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.SetReadOnlyBySmartTag(System.Boolean)">
+ <summary>
+ スマートタグによるReadOnly属性の設定
+ </summary>
+ <param name="value">値</param>
+</member>
+<member name="M:IBR_SJK_C020.ComDateSjk.SearchCode(IBR_SKS_C001.IbrData)">
+ <summary>
+ コード検索を実行し、Textの表示内容を更新します。
+ </summary>
+ <param name="ibr"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComLabelSjk.DefaultMargin">
+ <summary>
+ Marginの初期値
+ </summary>
+ <value>Marginの初期値</value>
+ <returns>Marginの初期値</returns>
+ <remarks></remarks>
+</member>
+<member name="E:IBR_SJK_C020.ComLabelSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComLabelSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComLabelSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComLabelSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComLabelSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComLabelSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComLabelSjk.ValueRef">
+ <summary>
+ =Text
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComLabelSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComLabelSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComLabelSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComLabelSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComNumberSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComNumberSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComNumberSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComNumberSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.ValueRef">
+ <summary>
+ =Value
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComNumberSjk.QuerySearchCode">
+ <summary>
+ コード検索イベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.CodeType">
+ <summary>
+ コード種別
+ </summary>
+ <value>コード種別</value>
+ <returns>コード種別</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.CanSearch">
+ <summary>
+ コード検索画面を使用可能
+ </summary>
+ <value>コード検索画面を使用可能</value>
+ <returns>コード検索画面を使用可能</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.DisplayName">
+ <summary>
+ メッセージ表示に使用するコントロール名
+ </summary>
+ <value>メッセージ表示に使用するコントロール名</value>
+ <returns>メッセージ表示に使用するコントロール名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.IsCheckExists">
+ <summary>
+ マスター存在チェック項目
+ </summary>
+ <value>マスター存在チェック項目</value>
+ <returns>マスター存在チェック項目</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.IsCheckRequired">
+ <summary>
+ 必須入力項目
+ </summary>
+ <value>必須入力項目</value>
+ <returns>必須入力項目</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.NameControl">
+ <summary>
+ 名称表示用コントロール
+ </summary>
+ <value>名称表示用コントロール</value>
+ <returns>名称表示用コントロール</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.SubControl">
+ <summary>
+ 補助入力コントロール
+ </summary>
+ <value>補助入力コントロール</value>
+ <returns>補助入力コントロール</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.NameItem">
+ <summary>
+ 名称表示用項目名
+ </summary>
+ <value>名称表示用項目名</value>
+ <returns>名称表示用項目名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk.IsReadOnlyControl">
+ <summary>
+ 読取専用コントロール
+ </summary>
+ <value>読取専用コントロール</value>
+ <returns>読取専用コントロール</returns>
+</member>
+<member name="P:IBR_SJK_C020.ComNumberSjk._smartTagAction">
+ <summary>
+ スマートタグによる処理実行クラス
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.ChangeCodeTypeBySmartTag(IBR_SJK_C020.ICodeInputControl.EnumCode)">
+ <summary>
+ スマートタグによるコード種別の変更
+ </summary>
+ <param name="newCodeType">コード種別(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.SetNameControlBySmartTag(System.Windows.Forms.TextBox)">
+ <summary>
+ スマートタグによる名称コントロールの設定
+ </summary>
+ <param name="newNameControl">名称コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.SetSubControlBySmartTag(IBR_SJK_C020.IComControlSjk)">
+ <summary>
+ スマートタグによる補助コントロールの設定
+ </summary>
+ <param name="newSubControl">補助コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.SetNameItemBySmartTag(System.String)">
+ <summary>
+ スマートタグによる名称項目名の設定
+ </summary>
+ <param name="newNameItem">名称項目名(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.SetReadOnlyBySmartTag(System.Boolean)">
+ <summary>
+ スマートタグによるReadOnly属性の設定
+ </summary>
+ <param name="value">値</param>
+</member>
+<member name="M:IBR_SJK_C020.ComNumberSjk.SearchCode(IBR_SKS_C001.IbrData)">
+ <summary>
+ コード検索を実行し、Textの表示内容を更新します。
+ </summary>
+ <param name="ibr"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComPanelSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComPanelSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComPanelSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComPanelSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComPanelSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComPanelSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComPanelSjk.ValueRef">
+ <summary>
+ =Text
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComPanelSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComPanelSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComPanelSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComPanelSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="M:IBR_SJK_C020.ComPanelSjk.ComControls(System.Boolean)">
+ <summary>
+ 子コントロールを列挙します
+ </summary>
+ <param name="nested">
+ True:子コントロールがContainerの場合に、その子コントロールまで列挙します。<BR/>
+ (Containerコントロールは結果から除外されます。)<BR/>
+ </param>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComRadioSjk.defaultCheckedValue">
+ <summary>
+ Checked値の初期値
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComRadioSjk.OnEnter(System.EventArgs)">
+ <summary>
+ Enterイベント時、強調表示
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComRadioSjk.OnLeave(System.EventArgs)">
+ <summary>
+ Leaveイベント時、強調表示解除
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComRadioSjk.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ KeyDownイベント時、Enterでフォーカス遷移
+ </summary>
+ <param name="kevent"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComRadioSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComRadioSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComRadioSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComRadioSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComRadioSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComRadioSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComRadioSjk.ValueRef">
+ <summary>
+ =Checked
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComRadioSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComRadioSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComRadioSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComRadioSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComTextSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComTextSjk.InitedControl">
+ <summary>
+ 値初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComTextSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.ComTextSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.ValueRef">
+ <summary>
+ =Text
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.ComTextSjk.QuerySearchCode">
+ <summary>
+ コード検索イベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.CodeType">
+ <summary>
+ コード種別
+ </summary>
+ <value>コード種別</value>
+ <returns>コード種別</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.CanSearch">
+ <summary>
+ コード検索画面を使用可能
+ </summary>
+ <value>コード検索画面を使用可能</value>
+ <returns>コード検索画面を使用可能</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.DisplayName">
+ <summary>
+ メッセージ表示に使用するコントロール名
+ </summary>
+ <value>メッセージ表示に使用するコントロール名</value>
+ <returns>メッセージ表示に使用するコントロール名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.IsCheckExists">
+ <summary>
+ マスター存在チェック項目
+ </summary>
+ <value>マスター存在チェック項目</value>
+ <returns>マスター存在チェック項目</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.IsCheckRequired">
+ <summary>
+ 必須入力項目
+ </summary>
+ <value>必須入力項目</value>
+ <returns>必須入力項目</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.NameControl">
+ <summary>
+ 名称表示用コントロール
+ </summary>
+ <value>名称表示用コントロール</value>
+ <returns>名称表示用コントロール</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.SubControl">
+ <summary>
+ 補助入力コントロール
+ </summary>
+ <value>補助入力コントロール</value>
+ <returns>補助入力コントロール</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.NameItem">
+ <summary>
+ 名称表示用項目名
+ </summary>
+ <value>名称表示用項目名</value>
+ <returns>名称表示用項目名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk.IsReadOnlyControl">
+ <summary>
+ 読取専用コントロール
+ </summary>
+ <value>読取専用コントロール</value>
+ <returns>読取専用コントロール</returns>
+</member>
+<member name="P:IBR_SJK_C020.ComTextSjk._smartTagAction">
+ <summary>
+ スマートタグによる処理実行クラス
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.ChangeCodeTypeBySmartTag(IBR_SJK_C020.ICodeInputControl.EnumCode)">
+ <summary>
+ スマートタグによるコード種別の変更
+ </summary>
+ <param name="newCodeType">コード種別(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.SetNameControlBySmartTag(System.Windows.Forms.TextBox)">
+ <summary>
+ スマートタグによる名称コントロールの設定
+ </summary>
+ <param name="newNameControl">名称コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.SetSubControlBySmartTag(IBR_SJK_C020.IComControlSjk)">
+ <summary>
+ スマートタグによる補助コントロールの設定
+ </summary>
+ <param name="newSubControl">補助コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.SetNameItemBySmartTag(System.String)">
+ <summary>
+ スマートタグによる名称項目名の設定
+ </summary>
+ <param name="newNameItem">名称項目名(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.SetReadOnlyBySmartTag(System.Boolean)">
+ <summary>
+ スマートタグによるReadOnly属性の設定
+ </summary>
+ <param name="value">値</param>
+</member>
+<member name="M:IBR_SJK_C020.ComTextSjk.SearchCode(IBR_SKS_C001.IbrData)">
+ <summary>
+ コード検索を実行し、Textの表示内容を更新します。
+ </summary>
+ <param name="ibr"></param>
+</member>
+<member name="T:IBR_SJK_C020.ICodeInputControl">
+ <summary>
+ コード入力コントロール定義インターフェース
+ </summary>
+</member>
+<member name="T:IBR_SJK_C020.ICodeInputControl.EnumCode">
+ <summary>
+ コード一覧
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.NotSet">
+ <summary>設定なし</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.Buhin">
+ <summary>部品番号</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.TokuiShanai">
+ <summary>得意先-社内のみ</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.TokuiShagai">
+ <summary>得意先-社内のみ</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.TokuiShanaiShagai">
+ <summary>得意先-社内＋社外</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.Bin">
+ <summary>便</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.Tanto">
+ <summary>担当者</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.YoukiCD">
+ <summary>容器コード</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.NonyuBasho">
+ <summary>納入場所</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.Jikotei">
+ <summary>次工程</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.Custom">
+ <summary>その他</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.BuhinZairyo">
+ <summary>部品番号＋材料</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.LineCd">
+ <summary>ラインコード</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.KonpoKeitai">
+ <summary>梱包形態</summary>
+</member>
+<member name="F:IBR_SJK_C020.ICodeInputControl.EnumCode.Zairyo">
+ <summary>材料コード</summary>
+</member>
+<member name="E:IBR_SJK_C020.ICodeInputControl.QuerySearchCode">
+ <summary>
+ コード検索イベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.CodeType">
+ <summary>
+ コード種別
+ </summary>
+ <value>コード種別</value>
+ <returns>コード種別</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.CanSearch">
+ <summary>
+ コード検索画面を使用可能
+ </summary>
+ <value>コード検索画面を使用可能</value>
+ <returns>コード検索画面を使用可能</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.IsCheckRequired">
+ <summary>
+ 必須入力項目
+ </summary>
+ <value>必須入力項目</value>
+ <returns>必須入力項目</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.IsCheckExists">
+ <summary>
+ マスター存在チェック項目
+ </summary>
+ <value>マスター存在チェック項目</value>
+ <returns>マスター存在チェック項目</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.DisplayName">
+ <summary>
+ メッセージ表示に使用するコントロール名
+ </summary>
+ <value>メッセージ表示に使用するコントロール名</value>
+ <returns>メッセージ表示に使用するコントロール名</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.NameControl">
+ <summary>
+ 名称表示用コントロール
+ </summary>
+ <value>名称表示用コントロール</value>
+ <returns>名称表示用コントロール</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.SubControl">
+ <summary>
+ 補助入力コントロール
+ </summary>
+ <value>補助入力コントロール</value>
+ <returns>補助入力コントロール</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.NameItem">
+ <summary>
+ 名称表示用項目名
+ </summary>
+ <value>名称表示用項目名</value>
+ <returns>名称表示用項目名</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.IsReadOnlyControl">
+ <summary>
+ 読取専用コントロール
+ </summary>
+ <value>読取専用コントロール</value>
+ <returns>読取専用コントロール</returns>
+</member>
+<member name="P:IBR_SJK_C020.ICodeInputControl.SmartTagAction">
+ <summary>
+ スマートタグによる処理実施クラス
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.ICodeInputControl.ChangeCodeTypeBySmartTag(IBR_SJK_C020.ICodeInputControl.EnumCode)">
+ <summary>
+ スマートタグによるコード種別の変更
+ </summary>
+ <param name="newCodeType">コード種別(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ICodeInputControl.SetNameControlBySmartTag(System.Windows.Forms.TextBox)">
+ <summary>
+ スマートタグによる名称コントロールの設定
+ </summary>
+ <param name="newNameControl">名称コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ICodeInputControl.SetSubControlBySmartTag(IBR_SJK_C020.IComControlSjk)">
+ <summary>
+ スマートタグによる補助コントロールの設定
+ </summary>
+ <param name="newSubControl">名称コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ICodeInputControl.SetNameItemBySmartTag(System.String)">
+ <summary>
+ スマートタグによる項目名の設定
+ </summary>
+ <param name="newNameItem">名称コントロール(新)</param>
+</member>
+<member name="M:IBR_SJK_C020.ICodeInputControl.SetReadOnlyBySmartTag(System.Boolean)">
+ <summary>
+ スマートタグによるReadOnly属性の設定
+ </summary>
+ <param name="value">値</param>
+</member>
+<member name="M:IBR_SJK_C020.ICodeInputControl.SearchCode(IBR_SKS_C001.IbrData)">
+ <summary>
+ コード検索を実行し、表示内容を更新します。
+ </summary>
+ <param name="ibr"></param>
+</member>
+<member name="T:IBR_SJK_C020.IComControlSjk">
+ <summary>
+ ComControl共通インターフェース
+ </summary>
+</member>
+<member name="E:IBR_SJK_C020.IComControlSjk.InittingControl">
+ <summary>
+ コントロールの初期化イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.IComControlSjk.InitedControl">
+ <summary>
+ コントロールの初期化完了イベント
+ </summary>
+ <param name="target">対象コントロール</param>
+ <param name="onFormLoad">Form Load時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.IComControlSjk.CheckingItem">
+ <summary>
+ 入力チェック(単体)用イベント
+ </summary>
+ <param name="target">チェック対象コントロール</param>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <param name="e"></param>
+</member>
+<member name="E:IBR_SJK_C020.IComControlSjk.SettingControlValue">
+ <summary>
+ 値更新(単体)用イベント
+ </summary>
+ <param name="target">発生元コントロール</param>
+ <param name="e"></param>
+</member>
+<member name="P:IBR_SJK_C020.IComControlSjk.Ibr">
+ <summary>
+ 接続情報
+ </summary>
+ <returns>接続情報</returns>
+</member>
+<member name="P:IBR_SJK_C020.IComControlSjk.ValueRef">
+ <summary>
+ 値参照プロパティ
+ </summary>
+ <returns>値参照プロパティ</returns>
+</member>
+<member name="M:IBR_SJK_C020.IComControlSjk.SetReadOnly(System.Boolean)">
+ <summary>
+ 有効/無効を切り替えます
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="P:IBR_SJK_C020.IComControlSjk.IsReadOnly">
+ <summary>
+ 有効/無効状態を返却します True:読取専用
+ </summary>
+ <param name="isReadOnly"></param>
+</member>
+<member name="M:IBR_SJK_C020.IComControlSjk.InitControl(System.Boolean)">
+ <summary>
+ ユーザ入力の初期化
+ </summary>
+ <param name="onFormLoad">Form Load時</param>
+</member>
+<member name="M:IBR_SJK_C020.IComControlSjk.CheckItem(System.Boolean)">
+ <summary>
+ 入力チェック処理
+ </summary>
+ <param name="onExecute">True:実行ボタン押下時</param>
+ <returns></returns>
+</member>
+<member name="M:IBR_SJK_C020.IComControlSjk.SetControlValue">
+ <summary>
+ 値取得処理
+ </summary>
+</member>
+</members>
+</doc>

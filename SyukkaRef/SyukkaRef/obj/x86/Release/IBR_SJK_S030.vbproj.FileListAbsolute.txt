@@ -1,0 +1,10 @@
+C:\井原精機\井原4次\src\EXE\IBR_SJK_S030.exe.config
+C:\井原精機\井原4次\src\EXE\IBR_SJK_S030.exe
+C:\井原精機\井原4次\src\EXE\IBR_SJK_S030.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030\IBR_SJK_S030\obj\x86\Release\IBR_SJK_S030.vbprojResolveAssemblyReference.cache
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030\IBR_SJK_S030\obj\x86\Release\IBR_SJK_S030.IBR_SJK_S030_000.resources
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030\IBR_SJK_S030\obj\x86\Release\IBR_SJK_S030.IBR_SJK_S030_010.resources
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030\IBR_SJK_S030\obj\x86\Release\IBR_SJK_S030.Resources.resources
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030\IBR_SJK_S030\obj\x86\Release\IBR_SJK_S030.vbproj.GenerateResource.Cache
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030\IBR_SJK_S030\obj\x86\Release\IBR_SJK_S030.exe
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030\IBR_SJK_S030\obj\x86\Release\IBR_SJK_S030.xml

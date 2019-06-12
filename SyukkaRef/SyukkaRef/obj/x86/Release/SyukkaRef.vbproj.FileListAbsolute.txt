@@ -1,0 +1,80 @@
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\SyukkaRef.exe
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\SyukkaRef.pdb
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\SyukkaRef.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\ComControl.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C010.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C020.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C030.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C050.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_J010.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SKS_C001.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SKS_M005.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\Oracle.DataAccess.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SKS_M006.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SKS_M002.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_M020.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_M010.dll
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C010.pdb
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C010.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C020.pdb
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C020.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C030.pdb
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C030.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C050.pdb
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_C050.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_J010.pdb
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_J010.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_M020.pdb
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_M020.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_M010.pdb
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\bin\Release\IBR_SJK_M010.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.vbprojAssemblyReference.cache
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.SyukkaRef_010.resources
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.SyukkaRef_000.resources
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.Resources.resources
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.vbproj.GenerateResource.cache
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.vbproj.CoreCompileInputs.cache
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.vbproj.CopyComplete
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.exe
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.xml
+C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\obj\x86\Release\SyukkaRef.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\SyukkaRef.exe
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\SyukkaRef.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\SyukkaRef.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\ComControl.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C010.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C020.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C030.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C050.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_J010.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SKS_C001.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SKS_M005.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\Oracle.DataAccess.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SKS_M006.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SKS_M002.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_M020.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_M010.dll
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C020.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C020.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C030.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C030.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C050.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C050.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C010.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_C010.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_J010.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_J010.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_M020.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_M020.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_M010.pdb
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\bin\Release\IBR_SJK_M010.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.vbprojAssemblyReference.cache
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.SyukkaRef_010.resources
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.SyukkaRef_000.resources
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.Resources.resources
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.vbproj.GenerateResource.cache
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.vbproj.CoreCompileInputs.cache
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.vbproj.CopyComplete
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.exe
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.xml
+C:\井原精機\井原4次\src\SOURCE\SyukkaRef\SyukkaRef\obj\x86\Release\SyukkaRef.pdb

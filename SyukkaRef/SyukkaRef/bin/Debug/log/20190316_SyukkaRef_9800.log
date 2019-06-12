@@ -1,0 +1,68 @@
+WK112-PC ,ユーザ番号=9800 ,ユーザ名=情報システム ,プログラム=SyukkaRef ,日時=2019/03/16 110952 ,メモリ使用量(KB)=72376 ,内容=オブジェクト参照がオブジェクト インスタンスに設定されていません。
+WK112-PC ,ユーザ番号=9800 ,ユーザ名=情報システム ,プログラム=SyukkaRef ,日時=2019/03/16 111214 ,メモリ使用量(KB)=64300 ,内容=オブジェクト参照がオブジェクト インスタンスに設定されていません。
+WK112-PC ,ユーザ番号=9800 ,ユーザ名=情報システム ,プログラム=SyukkaRef ,日時=2019/03/16 111347 ,メモリ使用量(KB)=71008 ,内容=オブジェクト参照がオブジェクト インスタンスに設定されていません。
+WK112-PC ,ユーザ番号=9800 ,ユーザ名=情報システム ,プログラム=SyukkaRef ,日時=2019/03/16 113425 ,メモリ使用量(KB)=76000 ,内容=値を Null にすることはできません。
+パラメータ名: key
+WK112-PC ,ユーザ番号=9800 ,ユーザ名=情報システム ,プログラム=SyukkaRef ,日時=2019/03/16 113541 ,メモリ使用量(KB)=74020 ,内容=値を Null にすることはできません。
+パラメータ名: key
+WK112-PC ,ユーザ番号=9800 ,ユーザ名=情報システム ,プログラム=SyukkaRef ,日時=2019/03/16 113922 ,メモリ使用量(KB)=72696 ,内容=値を Null にすることはできません。
+パラメータ名: key
+WK112-PC ,ユーザ番号=9800 ,ユーザ名=情報システム ,プログラム=SyukkaRef ,日時=2019/03/16 165336 ,メモリ使用量(KB)=111836 ,内容=例外：
+オブジェクト参照がオブジェクト インスタンスに設定されていません。
+例外スタックトレース
+   場所 SyukkaRef.SyukkaRef_010.BtnF4_Click(Object sender, EventArgs e) 場所 C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\SyukkaRef_010.vb:行 45
+   場所 System.Windows.Forms.Control.OnClick(EventArgs e)
+   場所 System.Windows.Forms.Button.OnClick(EventArgs e)
+   場所 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   場所 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   場所 System.Windows.Forms.Control.WndProc(Message& m)
+   場所 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   場所 System.Windows.Forms.Button.WndProc(Message& m)
+   場所 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   場所 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   場所 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   場所 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   場所 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   場所 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   場所 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   場所 System.Windows.Forms.Application.RunDialog(Form form)
+   場所 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   場所 SyukkaRef.SyukkaRef_000.BtnF7_Click(Object sender, EventArgs e) 場所 C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\SyukkaRef_000.vb:行 79
+   場所 System.Windows.Forms.Control.OnClick(EventArgs e)
+   場所 System.Windows.Forms.Button.OnClick(EventArgs e)
+   場所 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   場所 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   場所 System.Windows.Forms.Control.WndProc(Message& m)
+   場所 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   場所 System.Windows.Forms.Button.WndProc(Message& m)
+   場所 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   場所 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   場所 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   場所 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   場所 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   場所 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   場所 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   場所 System.Windows.Forms.Application.Run(Form mainForm)
+   場所 SyukkaRef.SyukkaRef_000.Main()
+
+WK112-PC ,ユーザ番号=9800 ,ユーザ名=情報システム ,プログラム=SyukkaRef ,日時=2019/03/16 174927 ,メモリ使用量(KB)=98900 ,内容=例外：
+オブジェクト参照がオブジェクト インスタンスに設定されていません。
+例外スタックトレース
+   場所 SyukkaRef.SyukkaRef_000.BtnF7_Click(Object sender, EventArgs e) 場所 C:\井原精機\井原4次\src\SOURCE\IBR_SJK_S030 - コピー (2)\SyukkaRef\SyukkaRef_000.vb:行 68
+   場所 System.Windows.Forms.Control.OnClick(EventArgs e)
+   場所 System.Windows.Forms.Button.OnClick(EventArgs e)
+   場所 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   場所 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   場所 System.Windows.Forms.Control.WndProc(Message& m)
+   場所 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   場所 System.Windows.Forms.Button.WndProc(Message& m)
+   場所 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   場所 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   場所 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   場所 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   場所 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(Int32 dwComponentID, Int32 reason, Int32 pvLoopData)
+   場所 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   場所 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   場所 System.Windows.Forms.Application.Run(Form mainForm)
+   場所 SyukkaRef.SyukkaRef_000.Main()
+

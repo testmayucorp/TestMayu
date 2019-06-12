@@ -1,0 +1,163 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IBR_SJK_C030
+</name>
+</assembly>
+<members>
+<member name="T:IBR_SJK_C030.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:IBR_SJK_C030.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:IBR_SJK_C030.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.OnLoad(System.EventArgs)">
+ <summary>
+ FormのLoadイベント
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ KeyDownイベント時、ファンクションキー関連付け
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF1_Click(System.Object,System.EventArgs)">
+ <summary>
+ F1キー押下イベント:検索<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF2_Click(System.Object,System.EventArgs)">
+ <summary>
+ F2キー押下イベント:取消<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF3_Click(System.Object,System.EventArgs)">
+ <summary>
+ F3キー押下イベント<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF4_Click(System.Object,System.EventArgs)">
+ <summary>
+ F4キー押下イベント<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF5_Click(System.Object,System.EventArgs)">
+ <summary>
+ F5キー押下イベント<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF6_Click(System.Object,System.EventArgs)">
+ <summary>
+ F6キー押下イベント<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF7_Click(System.Object,System.EventArgs)">
+ <summary>
+ F7キー押下イベント<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF8_Click(System.Object,System.EventArgs)">
+ <summary>
+ F8キー押下イベント<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF9_Click(System.Object,System.EventArgs)">
+ <summary>
+ F9キー押下イベント:実行<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF10_Click(System.Object,System.EventArgs)">
+ <summary>
+ F10キー押下イベント<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF11_Click(System.Object,System.EventArgs)">
+ <summary>
+ F11キー押下イベント<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.BtnF12_Click(System.Object,System.EventArgs)">
+ <summary>
+ F12キー押下イベント:終了<BR/>
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.Control_Enter(System.Object,System.EventArgs)">
+ <summary>
+ 全コントロールのEnterイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.DataGridView_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ DataGridViewのCellEnterイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.T_Dummy_Enter(System.Object,System.EventArgs)">
+ <summary>
+ Dummy TextBoxのEnterイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:IBR_SJK_C030.IbrFormBase.ExecuteMain">
+ <summary>
+ 実行処理メイン
+ </summary>
+</member>
+</members>
+</doc>

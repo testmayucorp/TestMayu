@@ -1,0 +1,132 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IBR_SJK_J010
+</name>
+</assembly>
+<members>
+<member name="P:IBR_SJK_J010.Parameter.BHN_NO">
+	<summary>[IN]部品番号</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.TOK_CD">
+	<summary>[IN]取引先コード</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.LINE_KBN">
+	<summary>[IN]ライン区分 1:ライン,2:CKD,3:補用品</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.NONYU_SHIJI_DT">
+	<summary>[IN]納入指示日</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.NONYU_SHIJI_JIKU">
+	<summary>[IN]納入指示日　時区</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.NONYU_BASHO">
+	<summary>[IN]納入場所</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.ORD_ITEM">
+	<summary>[IN]オーダーアイテム</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.JIKOTEI">
+	<summary>[IN]次工程</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.KD_KBN">
+	<summary>[IN]KD識別区分 JTEKTの受信データでの判断用 L:通常,K:KD,△:未設定</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.GEMPIN_HAKKO_KBN_IN">
+	<summary>[IN]現品票発行区分</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.TAISHO_MASTER_KBN">
+	<summary>[IN]対象マスタ区分(0:MCALE2, 1:SCALE2</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.BHN_INFO">
+	<summary>[IN/OUT]部品情報(1桁目～部品格付、検査協定、QC工程、マツダ工事番号、FILLER)</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.SHUKKA_TAN_HAN">
+	<summary>[IN/OUT]出荷担当班</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.SHUKKA_TAN">
+	<summary>[IN/OUT]出荷担当者</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.YOKI_CD">
+	<summary>[IN/OUT]容器種別　容器コード</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.SHUYOSU">
+	<summary>[IN/OUT]容器種別　収容数</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.SEIHIN_JURYO">
+	<summary>[IN/OUT]製品重量</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.KOJO_KBN">
+	<summary>[IN/OUT]工場区分　代表　(1:井原・笠岡,2:総社・総社第二</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.SEPPEN_FUGO">
+	<summary>[IN/OUT]設変符号</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.BHN_NM">
+	<summary>[IN/OUT]部品名称</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.BHN_NM_HOJO">
+	<summary>[IN/OUT]部品名称補助</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.GEMPIN_HAKKO_KBN_OUT">
+	<summary>[IN/OUT]現品票発行区分</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.GCTL">
+	<summary>[IN/OUT]現品票CTL(1桁目～納場、納期、設変符号、納入数、次工程、外装数)</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.BIN_CD">
+	<summary>[IN/OUT]便コード</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.NONYU_YOTEI_DT">
+	<summary>[IN/OUT]納入予定日</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.NONYU_YOTEI_JIKU">
+	<summary>[IN/OUT]納入予定日 時区</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.KOMPO_KEITAI_CD">
+	<summary>[IN/OUT]梱包形態コード</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.KOMPO_HINNO">
+	<summary>[IN/OUT]梱包材手配品番</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.KOMPO_YOKI_CD">
+	<summary>[IN/OUT]梱包容器コード</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.SHUKKA_TAN_LINE">
+	<summary>[IN/OUT]出荷担当ライン</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.UNSOGYO_KBN">
+	<summary>[IN/OUT]運送業者種別 △:自社手配,L:ロジコム</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.NCTL">
+	<summary>[IN/OUT]納場集計CTL(1桁目～CTL1、CTL2(2)、便コード訂正フラグ)</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.KANRI_KOJO">
+	<summary>[IN/OUT]管理工場</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.IKAN_KBN">
+	<summary>[IN/OUT]移管区分 総社部品移管に伴う識別に移管元の工場区分を入力する。</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.SE_NO">
+	<summary>[IN/OUT]背番号 差替取引先コード項目より背番号に変更</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.GEMPIN_BHN_NO">
+	<summary>[IN/OUT]現品票用部品番号(20桁)</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.BUHIN_EXISTS_FLG">
+	<summary>[IN/OUT]部品マスター有無フラグ(*:未登録)</summary>
+</member><member name="P:IBR_SJK_J010.Parameter.ReturnStatus">
+	<summary>[OUT]リターンステータス(0:通常、1:エラー)</summary>
+</member><member name="T:IBR_SJK_J010.Parameter">
+	<summary>
+ 受注残最新情報セットサブパラメータクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IBR_SJK_J010.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:IBR_SJK_J010.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:IBR_SJK_J010.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:IBR_SJK_J010.IBR_SJK_J010_000.Sub999(IBR_SKS_C001.IbrData,IBR_SJK_J010.Parameter)">
+	<summary>
+ parameterにセットされた受注残情報より、各種最新情報を返却する。
+ </summary>
+	<param name="ibr">接続情報</param>
+	<param name="parameter">受注残情報</param>
+	<returns>受注残最新情報</returns>
+	<remarks>エラーがあった場合はメインプログラムへステータス情報を返す</remarks>
+</member><member name="M:IBR_SJK_J010.IBR_SJK_J010_000.setNonyuSenkoParamFromMSENKO(IBR_SJK_J010.IBR_SJK_J010_000.Wnonyusenko@,System.String,IBR_SJK_J010.Parameter,IBR_SKS_C001.IbrData)">
+	<summary>
+ 納期先行計算マスタの検索を行い、納期先行計算用のパラメータをセットする
+ </summary>
+	<param name="kojoKbn">工場区分</param>
+	<param name="param">パラメータ</param>
+	<param name="ibr">接続情報</param>
+	<remarks>
+ 1回目→全て設定
+ 2回目→納入場所をスペースで検索
+ 3回目→次工程をスペースでで検索
+ 4回目→納入場所と次工程をスペースで検索
+ 5回目→納入場所と次工程をスペース、ライン区分を1で検索
+ </remarks>
+</member><member name="T:IBR_SJK_J010.IBR_SJK_J010_000">
+	<summary>
+ 受注残最新情報セットサブ
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

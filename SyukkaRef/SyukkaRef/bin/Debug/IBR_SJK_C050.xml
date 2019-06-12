@@ -1,0 +1,831 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IBR_SJK_C050
+</name>
+</assembly>
+<members>
+<member name="T:IBR_SJK_C050.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:IBR_SJK_C050.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:IBR_SJK_C050.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:IBR_SJK_C050.FileUtil">
+ <summary>
+ ファイル処理関数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.FileUtil.GenerationBackup(System.String,System.String,System.Int32,System.Boolean,System.Boolean)">
+ <summary>
+ 世代別バックアップを行う
+ </summary>
+ <param name="filePath">対象ファイルパス(例:C:\M80\NOUHINHD.DAT)→第1世代になる</param>
+ <param name="backupPath">バックアップファイルパス(例:C:\M80\NOUHHD{0:00}.DAT)</param>
+ <param name="generations">世代数</param>
+ <param name="retains">True:対象ファイルを移動ではなくコピーすることで保持する</param>
+ <param name="ignoreOnNoTarget">True:対象ファイルパスにファイルが存在しない場合にエラーとしない</param>
+ <remarks>
+ ファイル名の連番をbackupPathにフォーマット付きで指定すること({0:00})<BR/>
+ バックアップ対象ファイルが存在しない場合例外をスローする<BR/>
+ バックアップ先フォルダが存在しない場合作成する<BR/>
+ </remarks>
+</member>
+<member name="T:IBR_SJK_C050.Messages">
+ <summary>
+ 定数宣言クラス
+ </summary>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ErrInUse">
+ <summary>
+ 「他端末で使用中です。」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ErrSelect(System.String,System.Exception)">
+ <summary>
+ 「{target}の取得に失敗しました。<BR/>(エラー内容)」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ErrSelect(System.String,System.String,System.Exception)">
+ <summary>
+ 「{target}の取得に失敗しました。{parameter}<BR/>(エラー内容)」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ErrUpdate(System.String,System.Exception)">
+ <summary>
+ 「{target}の更新に失敗しました。<BR/>(エラー内容)」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ErrUpdate(System.String,System.String,System.Exception)">
+ <summary>
+ 「{target}の更新に失敗しました。{parameter}<BR/>(エラー内容)」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ErrDelete(System.String,System.Exception)">
+ <summary>
+ 「{target}の削除に失敗しました。<BR/>(エラー内容)」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ErrDelete(System.String,System.String,System.Exception)">
+ <summary>
+ 「{target}の削除に失敗しました。{parameter}<BR/>(エラー内容)」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.WarnAlreadyExists">
+ <summary>
+ 「既に登録済みです。」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.WarnNoInput(System.String)">
+ <summary>
+ 「{target}を入力して下さい。」
+ </summary>
+ <param name="target">対象項目</param>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.WarnNoSelect(System.String)">
+ <summary>
+ 「{target}を選択して下さい。」
+ </summary>
+ <param name="target">対象項目</param>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.WarnNoData">
+ <summary>
+ 「該当データが存在しません。」
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.WarnNoExists(System.String)">
+ <summary>
+ 「{target}が存在しません。」
+ </summary>
+ <param name="target">対象項目</param>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.WarnSelectDetail">
+ <summary>
+ 明細行を選択して下さい。
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ConfirmOperation(System.String)">
+ <summary>
+ {operation}を行います。よろしいですか?
+ </summary>
+ <param name="operation">操作</param>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.ConfirmExit">
+ <summary>
+ 画面を終了します。よろしいですか?
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:IBR_SJK_C050.Messages.InfoSuccess(System.String)">
+ <summary>
+ {operation}処理が正常に終了しました。
+ </summary>
+ <param name="operation">操作</param>
+ <returns></returns>
+</member>
+<member name="T:IBR_SJK_C050.CsvUtil">
+ <summary>
+ CSV処理関数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.CsvUtil.WriteCSVFile(System.Data.DataTable,System.String,System.String[],System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>DataTableからCSVファイルを生成し、指定されたパスのファイルに出力する。</summary>
+ <param name="target">値が格納されたDataTableです。</param>
+ <param name="path">出力ファイルパス。pathは「c:\xxx.csv」の形式</param>
+ <param name="HeaderStr">表のヘッダー部(列名)が格納された配列です。</param>
+ <param name="HeaderAutoMake">この値がTrueの時はtargetのDataTableの各カラムのColumnNameを表のヘッダー部として使います。</param>
+ <param name="delimiter">データの区切り文字です。デフォルトはカンマ「,」です。</param>
+ <param name="delimiterEscape">データ中に区切り文字が現れた際の区切り文字です。デフォルトはカンマ「,」です。（区切り文字がデフォルトのままの場合は、変換無しです）</param>
+ <param name="siege">囲み文字です。デフォルトはダブルクォート「"」です。</param>
+ <param name="siegeEscape">データ中に囲み文字が現れた場合のエスケープ文字です。デフォルトは「""」です。</param>
+ <param name="newLine">改行文字です。デフォルトは、「vbCrLf」</param>
+ <param name="encoding">文字コード（Optional ByVal encoding As String = &quot;Shift_JIS&quot;）</param>
+ <remarks>
+ <exception cref="T:System.IO.DirectoryNotFoundException">
+ DirectoryNotFoundException:出力フォルダが存在しない場合
+ </exception>
+ <para>DataTableのデータをCSV形式にしファイルに出力します。</para>
+ <para>１件を１行で表現します。DBNull・Nothingは空文字扱いです。</para>
+ <para>独自の区切り文字・囲い文字・エスケープ・改行文字を指定したい場合は、引数で指定してください。</para>
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.CsvUtil.ReadCSVFile(System.String,System.String,System.Boolean,System.Boolean,System.String,System.Boolean)">
+ <summary>
+ CSVファイルを読み込みListのString形式で返す
+ </summary>
+ <param name="filePath">CSVファイルパス。pathは「c:\xxx.csv」の形式</param>
+ <param name="delimiter">データの区切り文字です。デフォルトはカンマ「,」です。</param>
+ <param name="hasFieldsEnclosedInQuote">囲み文字です。ダブルクォート「"」が設定してありデフォルトでTrueです。</param>
+ <param name="trimWhiteSpace">フィールド値の前後の空白をトリムするかです。デフォルトでFalseです。</param>
+ <param name="encoding">文字コード（Optional ByVal encoding As String = &quot;Shift_JIS&quot;）</param>
+ <param name="headerSkip">ヘッダー（カラム名）の行をスキップするか。デフォルトはTrueです。</param>
+ <returns>読み込んだCSVファイルのリストを返します。</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.CsvUtil.CreateCSV(System.Data.DataTable,System.String[],System.Boolean,System.String,System.String,System.String,System.String,System.String)">
+ <summary>DataTableからCsv形式の文字列を生成します。</summary>
+ <param name="target">値が格納されたDataTableです。</param>
+ <param name="HeaderStr">表のヘッダー部(列名)が格納されたDataTableです。</param>
+ <param name="HeaderAutoMake">この値がTrueの時はtargetのDataTableの各カラムのColumnNameを表のヘッダー部として使います。</param>
+ <param name="delimiter">データの区切り文字です。デフォルトはカンマ「,」です。</param>
+ <param name="delimiterEscape">データ中に区切り文字が現れた際の区切り文字です。デフォルトはカンマ「,」です。（区切り文字がデフォルトのままの場合は、変換無しです）</param>
+ <param name="siege">囲み文字です。デフォルトはダブルクォート「"」です。</param>
+ <param name="siegeEscape">データ中に囲み文字が現れた場合のエスケープ文字です。デフォルトは「""」です。</param>
+ <param name="newLine">改行文字です。デフォルトは、「vbCrLf」</param>
+ <returns>
+ <para>CSV文字列</para>
+ </returns>
+ <remarks>
+ <para>DataTableのデータをCSV形式の文字列にします。</para>
+ <para>１件を１行で表現します。DBNull・Nothingは空文字扱いです。</para>
+ <para>独自の区切り文字・囲い文字・エスケープ・改行文字を指定したい場合は、引数で指定してください。</para>
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.CsvUtil.ArrayToDataTable(System.String[])">
+ <summary>文字列配列をDataTableに変換します。</summary>
+ <param name="array">変換もとの文字列配列です。</param>
+ <returns>
+ <para>文字列配列を転記したDataTable</para>
+ </returns>
+</member>
+<member name="M:IBR_SJK_C050.CsvUtil.HeaderListAutoMake(System.Data.DataTable)">
+ <summary>引数で指定されたDataTableの各カラムのColumnNameを戻り値のDataTableに転記します。</summary>
+ <param name="baseDT">カラム名を取得する元のDataTableです。</param>
+ <returns>
+ <para>ColumnNameを転記したDataTable</para>
+ </returns>
+</member>
+<member name="M:IBR_SJK_C050.CsvUtil.DataTableToCSV(System.Data.DataTable,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.String[])">
+ <summary>
+ DataTableのデータをCSV形式にします。
+ </summary>
+ <param name="target">値が格納されたDataTableです。</param>
+ <param name="delimiter">データの区切り文字です。デフォルトはカンマ「,」です。</param>
+ <param name="delimiterEscape">データ中に区切り文字が現れた際の区切り文字です。デフォルトはカンマ「,」です。（区切り文字がデフォルトのままの場合は、変換無しです）</param>
+ <param name="siege">囲み文字です。デフォルトはダブルクォート「"」です。</param>
+ <param name="siegeEscape">データ中に囲み文字が現れた場合のエスケープ文字です。デフォルトは「""」です。</param>
+ <param name="newLine">改行文字です。デフォルトは、「vbCrLf」</param>
+ <param name="columnHeaderFlag">カラム名をヘッダ名として使用するか否か</param>
+ <param name="headerArgs">ヘッダ名をString配列で指定します。(columnHeaderFlagよりこちらを優先します)</param>
+ <returns>
+ CSV文字列
+ 例外発生時はNothingを返します。
+ </returns>
+ <remarks>
+ DataTableのデータをCSV形式にします。
+ １件を１行で表現します。DBNull・Nothingは空文字扱いです。
+ 独自の区切り文字・囲い文字・エスケープ・改行文字を指定したい場合は、引数で指定してください。
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.CsvUtil.ReplaceDBNull(System.Object,System.String)">
+ <summary>
+ DBNull値の置換を行います。
+ </summary>
+ <param name="obj">値</param>
+ <param name="rep">置換文字列</param>
+ <returns>引数のオブジェクト、又は変換された文字列</returns>
+ <remarks>
+ デフォルトでは、引数のオブジェクトがDBNullの場合には空文字が返ります。
+ それ以外では、引数がそのまま返されます。
+ </remarks>
+</member>
+<member name="T:IBR_SJK_C050.DataUtil">
+ <summary>
+ データ処理関数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IBR_SJK_C050.DataUtil.EnvironmentKey">
+ <summary>
+ 環境テーブルキー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.OffcomLinkPath">
+ <summary>オフコン連携ファイル出力フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.ExcelTemplatePath">
+ <summary>EXCELテンプレートファイル配置フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.ExcelSavePath">
+ <summary>EXCEL自動保存フォルダ(バッチ実行)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.PrintWarnCount">
+ <summary>作表時警告表示件数</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.OffcomLinkInputPath">
+ <summary>オフコン連携ファイル取得フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.PrintFileSaveDir">
+ <summary>納品書・現品票印刷ファイル保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.NouhinshoExePath">
+ <summary>納品書印刷プログラム実行パス</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.GenpinhyoExePath">
+ <summary>現品票印刷プログラム実行パス</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.GetsumatsuShukkajimePath">
+ <summary>月末出荷締め関係帳票出力フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.BatchMaxRetryCount">
+ <summary>バッチ処理最大リトライ回数</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.BatchRetryWaitSecond">
+ <summary>バッチ処理リトライ待ち時間(秒)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.YosanDataWarnCount">
+ <summary>予算実績明細データ表示件数</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.JtektKanbanDetailSaveDir">
+ <summary>JTEKTかんばん明細表保存フォルダ(単独実行)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.JtektNounyuIraishoSaveDirA">
+ <summary>JTEKT納入依頼書保存フォルダ(単独実行)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.JtektNounyuIraishoSaveDirB">
+ <summary>JTEKT納入依頼書保存フォルダ(連続実行)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.DensoFilePath">
+ <summary>当日受信データ変換CSV保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.NichijiJushinChohyoPath">
+ <summary>生管資料日次受信帳票フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.IskNonyushijiDir">
+ <summary>井関納入指示フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.IbaraSeisanKanriPrinterName">
+ <summary>井原工場の生産管理課にあるプリンタのプリンタ名</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.Soja2SeisanKanriPrinterName">
+ <summary>総社第二の生産管理課にあるプリンタのプリンタ名</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.KakuteiNaijiUnmatchSaveDir">
+ <summary>確定内示アンマッチリスト保存フォルダ(連続実行)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.JidouSyougouSaveDir">
+ <summary>自動照合の帳票ファイル保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.NaijiDataRenkeiCommand">
+ <summary>JYU010で内示データ接続に使用するコマンド(空の場合は実行無し)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.LocalSaveDir">
+ <summary>ローカルファイル保存フォルダ(汎用)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.ExcelVbaPath">
+ <summary>EXCEL-VBAファイル配置フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.SyukkaHoukokuFileWorkDir">
+ <summary>出荷報告ファイル出力フォルダ(ワーク)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.SyukkaHoukokuAdvicsFileDir">
+ <summary>出荷報告ファイル(ADVICS)出力フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.SyukkaHoukokuMmcFileDir">
+ <summary>出荷報告ファイル(MMC)出力フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.EdiSendModuleDir">
+ <summary>EDI送信モジュール実行フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.SizaiSimeSyoriDir">
+ <summary>資材締め処理</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.KaikeiSinanTensouDirA">
+ <summary>会計指南転送データ出力フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.KaikeiSinanTensouDirB">
+ <summary>会計指南転送データ出力フォルダ(共有フォルダ)</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.JtektNohinshoPrinterName">
+ <summary>JTEKT納品書作成</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.GyojishaDailyPath">
+ <summary>行事車デイリー追加表</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.ArchiveDataSaveDir">
+ <summary>オフコン説明書保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.YosanMeisaiSaveDir">
+ <summary>経理予算明細保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.SeihinDekidakaAbcDir">
+ <summary>製品出来高ＡＢＣ保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.SeihinCostAbcDir">
+ <summary>製品群コスト管理保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.HanbetuKakoudakaDir">
+ <summary>班別加工高実績保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.BuhinNitteiSyoriSaveDir">
+ <summary>部品日程表保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.MmcNitteihyoSaveDir">
+ <summary>MMC日程表保存フォルダ</summary>
+</member>
+<member name="F:IBR_SJK_C050.DataUtil.EnvironmentKey.SyukkaJissekiSaveDir">
+ <summary>出荷実績保存フォルダ</summary>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetEnvValue(IBR_SKS_C001.IbrData,IBR_SJK_C050.DataUtil.EnvironmentKey,System.String)">
+ <summary>
+ 環境テーブルから設定値を取得する
+ </summary>
+ <param name="key">キー</param>
+ <param name="ibr">接続情報</param>
+ <param name="defaultValue">既定値</param>
+ <returns></returns>
+ <remarks>存在しない場合、既定値を返却する。</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetEnvValue(IBR_SKS_C001.IbrData,System.String,System.String)">
+ <summary>
+ 環境テーブル(MENVIR)から設定値を取得する
+ </summary>
+ <param name="ibr">接続情報</param>
+ <param name="key">キー</param>
+ <param name="defaultValue">既定値</param>
+ <returns></returns>
+ <remarks>存在しない場合、既定値を返却する。</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetShainNM(IBR_SKS_C001.IbrData,System.Int32,System.Boolean@)">
+ <summary>
+ PASSWDを参照し社員番号から社員名(MAX20バイト)を取得する
+ </summary>
+ <param name="ibr">[IN]接続情報</param>
+ <param name="shainCD">[IN]社員番号</param>
+ <param name="exists">[OUT]True:マスタに存在する</param>
+ <returns>社員名(MAX20バイト)</returns>
+ <remarks>存在しない場合、空文字を返却する</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetBuhinNM(IBR_SKS_C001.IbrData,System.String,System.Int32,System.Boolean@)">
+ <summary>
+ MBUHINより部品番号から部品名称(MAX20バイト)を取得する(最新)
+ </summary>
+ <param name="ibr">[IN]接続情報</param>
+ <param name="buhinNO">[IN]部品番号</param>
+ <param name="yukoDtTo">[IN]有効日付(TO)</param>
+ <param name="exists">[OUT]True:マスタに存在する</param>
+ <returns>部品名称(主)(MAX20バイト)</returns>
+ <remarks>存在しない場合、空文字を返却する</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetTokuiNM(IBR_SKS_C001.IbrData,System.String,System.Boolean@)">
+ <summary>
+ MTOKUIより得意先コードから得意先名称(MAX24バイト)を取得する
+ </summary>
+ <param name="ibr">[IN]接続情報</param>
+ <param name="tokuiCD">[IN]得意先コード</param>
+ <param name="exists">[OUT]True:マスタに存在する</param>
+ <returns>得意先名称(MAX24バイト)</returns>
+ <remarks>存在しない場合、空文字を返却する</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetMeishoCodeList(IBR_SKS_C001.IbrData,System.String)">
+ <summary>
+ 名称マスタMNAMEより識別コード(KEY)からコードと名称の一覧を取得する
+ </summary>
+ <param name="ibr">[IN]接続情報</param>
+ <param name="key">[IN]識別コード</param>
+ <returns>コードと名称の一覧</returns>
+ <remarks>存在しない識別コードの場合、Nothingを返却する</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetMeishoValue(IBR_SKS_C001.IbrData,System.String,System.String,System.Boolean@)">
+ <summary>
+ 名称マスタMNAMEより識別コード(KEY)とコード(CODE)から名称を取得する
+ </summary>
+ <param name="ibr">[IN]接続情報</param>
+ <param name="key">[IN]識別コード</param>
+ <param name="code">[IN]コード</param>
+ <param name="exists">[OUT]True:マスタに存在する</param>
+ <returns>名称(漢字)(MAX24バイト)</returns>
+ <remarks>存在しない場合、空文字を返却する</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetMeishoValue(IBR_SKS_C001.IbrData,System.String,System.String,System.Int32)">
+ <summary>
+ 名称マスタMNAMEより識別コード(KEY)とコード(CODE)から名称を取得する
+ </summary>
+ <param name="ibr">[IN]接続情報</param>
+ <param name="key">[IN]識別コード</param>
+ <param name="code">[IN]コード</param>
+ <param name="ryakuKbn">[IN]略称区分 0:略名６文字 1:略名４文字 2：名称（漢字）</param>
+ <returns>略名６文字または略名４文字(MAX12バイト)</returns>
+ <remarks>存在しない場合、空文字を返却する</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetKojoList(IBR_SKS_C001.IbrData)">
+ <summary>
+ 名称マスタMNAMEより工場の一覧を取得する
+ </summary>
+ <param name="ibr">[IN]接続情報</param>
+ <returns>工場の一覧</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetDefaultKojoCode">
+ <summary>
+ 呼び出しPCのIPアドレスから既定の工場コードを取得します。
+ <example>(例)
+ <code>
+ 192.168.10.XXX : 井原工場(1)
+ 192.168.13.XXX : 笠岡工場(3)
+ 192.168.15.XXX : 総社工場(2)
+ 192.168.17.XXX : 総社第二(4)
+ </code>
+ </example>
+ </summary>
+ <returns>工場コード</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetTableSchema(IBR_SKS_C001.IbrData,System.String)">
+ <summary>
+ テーブル名のスキーマ情報(列名、主キー、制約)を取得して空のテーブルを返却します
+ </summary>
+ <param name="ibr">接続情報</param>
+ <param name="tableNm">テーブル名</param>
+ <returns>スキーマ情報取得済みの空のDataTable</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.UpdateByDataSet(IBR_SKS_C001.IbrData,System.Data.DataSet)">
+ <summary>
+ 引数DataSetに含まれるDataTableの更新をデータベースに反映します
+ </summary>
+ <param name="ibr">接続情報</param>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.Nvl``1(System.Object,``0)">
+ <summary>
+ DBNull置換関数<BR/>
+ value1がDBNull.Valueの場合、value2を返します。<BR/>
+ それ以外の場合はvalue1を返します。<BR/>
+ ジェネリクスを使用した汎用版
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>DBNull置換後の値</returns>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.NvlStr(System.Object,System.String)">
+ <summary>
+ DBNull置換関数<BR/>
+ value1がDBNull.Valueの場合、value2を返します。<BR/>
+ それ以外の場合はvalue1を返します。
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>DBNull置換後の値</returns>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.NvlInt(System.Object,System.Int32)">
+ <summary>
+ DBNull置換関数<BR/>
+ value1がDBNull.Valueの場合、value2を返します。<BR/>
+ それ以外の場合はvalue1を返します。
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>DBNull置換後の値</returns>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.NvlDec(System.Object,System.Decimal)">
+ <summary>
+ DBNull置換関数<BR/>
+ value1がDBNull.Valueの場合、value2を返します。<BR/>
+ それ以外の場合はvalue1を返します。
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>DBNull置換後の値</returns>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.NvlStrLen(System.Object,System.Int32)">
+ <summary>
+ <para>DBNull置換＋桁数カット関数</para>
+ <para>value1がDBNull.Valueの場合、lengthバイトまでスペース埋めします。</para>
+ <para>その後、lengthバイトでカットします。(Shift-Jis換算)</para>
+ </summary>
+ <param name="value1">値1</param>
+ <param name="length">桁数</param>
+ <returns>編集後の文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.NvlIntLen(System.Object,System.Int32)">
+ <summary>
+ <para>DBNull置換＋桁数カット関数</para>
+ <para>value1がDBNull.Valueの場合、0を返します。</para>
+ <para>その後、規定バイトにカットします。(Shift-Jisのバイト換算)</para>
+ <para>桁数オーバーしている場合、末尾から使用します。</para>
+ <example>NvlIntLen(123456, 3) => 456</example>
+ </summary>
+ <param name="value1">値</param>
+ <param name="length">桁数</param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.NvlDecLen(System.Object,System.Int32,System.Int32)">
+ <summary>
+ <para>DBNull置換＋桁数カット関数</para>
+ <para>value1がDBNull.Valueの場合、0を返します。</para>
+ <para>その後、規定バイトにカットします。(Shift-Jisのバイト換算)</para>
+ <para>桁数オーバーしている場合、整数部は末尾、小数部は先頭から使用します。</para>
+ <example>NvlDecLen(123.456, 1, 1) => 3.4</example>
+ </summary>
+ <param name="value1">値</param>
+ <param name="intLength">整数桁数</param>
+ <param name="decimalLength">小数桁数</param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetMakerKbn(System.String,System.String)">
+ <summary>
+ 納品書番号、行番号からメーカ区分を取得します。
+ </summary>
+ <param name="nohinshoNo">納品書番号</param>
+ <param name="gyoNo">行番号</param>
+ <returns>メーカー区分</returns>
+ <remarks>
+ 行番号が「J」の場合は「J」(ジャトコ)<BR/>
+ 納品書番号の2桁目が「0」～「9」の場合は「I」(自社)<BR/>
+ それ以外の場合は「M」(三菱)<BR/>
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.getIpAddress">
+ <summary>
+ ローカルマシンのIPアドレスを取得する
+ </summary>
+ <returns></returns>
+ <remarks>
+ IPアドレス(例:192.168.10.1)。<BR/>
+ 取得に失敗した場合空文字を返却する
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetEdpNo(System.String,System.Int32,System.Decimal)">
+ <summary>
+ EDP番号管理ファイル(EDPNOF)からEDP番号を取得する
+ </summary>
+ <param name="fileKbn">ファイル区分</param>
+ <param name="noKbn">番号区分 1:EDP番号１、2:EDP番号２、・・・、12:EDP番号３、13:EDP番号（長）</param>
+ <returns></returns>
+ <remarks>番号区分を省略した場合、EDP番号１を取得する</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.InsertEDPNOF(Oracle.DataAccess.Client.OracleConnection,Oracle.DataAccess.Client.OracleCommand,System.String)">
+ <summary>
+ EDP番号ファイル登録
+ </summary>
+ <param name="Q_com">OracleConnection</param>
+ <param name="Q_con">OracleCommand</param>
+ <param name="fileKbn">ファイル区分</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.SetDbconnInfo(System.String@,System.String@,System.String@)">
+ <summary>
+ データベース用ユーザID、パスワード、接続文字列取得
+ </summary>
+ <param name="strUser">データベースユーザID</param>
+ <param name="strPass">データベースパスワード</param>
+ <param name="strData">データベース接続文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.GetConnection">
+ <summary>
+ 別トランザクション処理用に新規にDB接続を開始します。
+ </summary>
+ <returns>OracleConnectionオブジェクト(Open済 Transaction未設定)</returns>
+ <remarks>Connectionは読み出し元の責任でCloseすること</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DataUtil.InsertByArrayBind(IBR_SKS_C001.IbrData,System.Data.DataTable)">
+ <summary>
+ 配列バインドを使用してDataTableの追加データを一括で登録(INSERT)します。
+ </summary>
+ <param name="ibr">接続情報</param>
+ <param name="dt">登録DataTable</param>
+ <returns>登録件数</returns>
+ <remarks></remarks>
+</member>
+<member name="T:IBR_SJK_C050.DateUtil">
+ <summary>
+ 日付処理関数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DateUtil.ConvertFromShortDate(System.Int32)">
+ <summary>
+ 6桁形式の日付数値を8桁形式に変換する
+ </summary>
+ <param name="shortDate">日付数値(6桁形式) (例)871026 = 1987年10月26日</param>
+ <returns>日付数値(8桁形式) (例)871026 => 19871026</returns>
+ <remarks>1900年代、2000年代の判定は800000(80年)を境界として行う</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DateUtil.ToDate(System.Int32)">
+ <summary>
+ 8桁数値形式の日付(例:20160101)をDate型に変換します。
+ </summary>
+ <param name="value">日付数値</param>
+ <returns>数値0はDate.MinValueに変換します。</returns>
+</member>
+<member name="M:IBR_SJK_C050.DateUtil.ToInt(System.DateTime)">
+ <summary>
+ Date型の日付を8桁数値形式に変換します
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks>Date.MinValueは0に変換します</remarks>
+</member>
+<member name="M:IBR_SJK_C050.DateUtil.GetServerDate(IBR_SKS_C001.IbrData)">
+ <summary>
+ サーバーの日付・時刻を取得します。
+ </summary>
+ <param name="ibr">接続情報</param>
+ <returns>サーバーの日付・時刻</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.DateUtil.AddDaysOrMonths(System.Int32,System.Int32,System.Boolean,System.Boolean)">
+ <summary>
+ 年月、年月日の加減算処理を行います。
+ </summary>
+ <param name="value">年月(YYYYMM)or年月日(YYYYMMMDD)(例:201706 20170810) YYMMDD形式の場合はオプション引数を指定</param>
+ <param name="dayOrMonths">加算する日付 YYYYMM形式の場合は1=1か月、YYYYMMDD形式の場合は1=1日を加算する</param>
+ <param name="isShortDate">valueが4桁(YYMM)or6桁(YYMMDD)形式の場合Trueに設定</param>
+ <param name="isReturnShortDate">6桁日付形式(YYMMDD)で返却する場合Trueに設定</param>
+ <returns>計算後の日付数値</returns>
+ <remarks>変換エラー時は変換前の値を返却</remarks>
+</member>
+<member name="M:IBR_SJK_C050.MessageUtil.InfomationMessage(System.String,System.String)">
+ <summary>
+ 情報メッセージを表示する。
+ </summary>
+ <param name="msg">表示メッセージ</param>
+</member>
+<member name="M:IBR_SJK_C050.MessageUtil.ConfirmMessage(System.String,System.String,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+ <summary>
+ 確認メッセージを表示する。
+ </summary>
+ <param name="msg">表示メッセージ</param>
+ <param name="defaultButton">フォーカスするボタン</param>
+ <returns>True:Yes</returns>
+</member>
+<member name="M:IBR_SJK_C050.MessageUtil.WarnMessage(System.String,System.String)">
+ <summary>
+ 警告メッセージを表示する。
+ </summary>
+ <param name="msg">表示メッセージ</param>
+</member>
+<member name="M:IBR_SJK_C050.MessageUtil.ErrorMessage(System.String,System.String)">
+ <summary>
+ エラーメッセージを表示する。
+ </summary>
+ <param name="msg">表示メッセージ</param>
+</member>
+<member name="T:IBR_SJK_C050.StringUtil">
+ <summary>
+ 文字列処理関数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.StringUtil.ByteLength(System.String)">
+ <summary>
+ 文字列のバイト長を返します。
+ </summary>
+ <param name="value">対象文字列</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C050.StringUtil.PadLeftByte(System.String,System.Int32,System.Char)">
+ <summary>
+ 指定バイト長まで空白文字列埋め(左埋め)を行います。(例:"1" => "001"
+ </summary>
+ <param name="value">対象文字列</param>
+ <param name="byteLength">指定バイト長</param>
+ <param name="padChar">パディング文字</param>
+ <remarks>
+ Nothingが指定された場合は指定長の空文字列を返却する。<BR/>
+ 指定バイト長を超える場合はそのまま返却する。
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.StringUtil.PadRightByte(System.String,System.Int32,System.Char)">
+ <summary>
+ 指定バイト長まで空白文字列埋め(右埋め)を行います。(例:"A" => "A  "
+ </summary>
+ <param name="value">対象文字列</param>
+ <param name="byteLength">指定バイト長</param>
+ <param name="padChar">パディング文字</param>
+ <remarks>
+ Nothingが指定された場合は指定長の空文字列を返却する。<BR/>
+ 指定バイト長を超える場合はそのまま返却する。
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.StringUtil.LeftByte(System.String,System.Int32,System.Boolean)">
+ <summary>
+ 文字列の左端から指定されたバイト数分の文字列を返します。
+ </summary>
+ <param name="value">対象文字列</param>
+ <param name="byteLength">最大設定バイト数</param>
+ <param name="roundDown">指定バイトが文字途中の場合に切り捨てるか（初期値：切捨て）</param>
+ <returns>
+ <para>変換後文字列</para>
+ </returns>
+ <remarks>
+ 文字列の左端から指定されたバイト数分の文字列を返します。
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.StringUtil.RightByte(System.String,System.Int32,System.Boolean)">
+ <summary>
+ 文字列の右端から指定されたバイト数分の文字列を返します。
+ </summary>
+ <param name="value">対象文字列</param>
+ <param name="byteLength">最大設定バイト数</param>
+ <param name="roundDown">指定バイトが文字途中の場合に切り捨てるか（初期値：切捨て）</param>
+ <returns>
+ <para>変換後文字列</para>
+ </returns>
+ <remarks>
+ 文字列の右端から指定されたバイト数分の文字列を返します。
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.StringUtil.MidByte(System.String,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+ <summary>
+ 開始位置から指定されたバイト数分の文字列を返します。
+ </summary>
+ <param name="value">対象文字列</param>
+ <param name="startByte">開始位置(1からバイト指定)</param>
+ <param name="byteLength">バイト長</param>
+ <param name="roundDownTop">開始バイト位置が文字途中の場合に切り捨てるか否か（初期値：切捨て）</param>
+ <param name="roundDownBottom">切り出した文字列の終端が文字途中の場合に切り捨てるか否か（初期値：切捨て）</param>
+ <returns>
+ <para>変換後文字列</para>
+ </returns>
+ <remarks>
+ 開始位置から指定されたバイト数分の文字列を返します。
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C050.StringUtil.ReplaceByte(System.String,System.Int32,System.String)">
+ <summary>
+ 対象文字列を指定位置から置換文字列の長さだけ置換した文字列を返します。
+ </summary>
+ <param name="value">対象文字列</param>
+ <param name="startByte">開始バイト位置</param>
+ <param name="replaceValue">置換文字列</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

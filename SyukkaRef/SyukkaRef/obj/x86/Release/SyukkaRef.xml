@@ -1,0 +1,261 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SyukkaRef
+</name>
+</assembly>
+<members>
+<member name="T:SyukkaRef.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:SyukkaRef.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:SyukkaRef.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.BtnF3_Click(System.Object,System.EventArgs)">
+ <summary>
+ 前の画像(F3)ボタン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.BtnF4_Click(System.Object,System.EventArgs)">
+ <summary>
+ 次の画像(F4)ボタン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.BtnF5_Click(System.Object,System.EventArgs)">
+ <summary>
+ 前項目(F5)ボタン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.BtnF8_Click(System.Object,System.EventArgs)">
+ <summary>
+ 次項目(F8)ボタン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.BtnF9_Click(System.Object,System.EventArgs)">
+ <summary>
+ 画像保存(F9)ボタン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.Get_back_record">
+ <summary>
+ 一つ前の明細を表示
+ </summary>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.Get_next_record">
+ <summary>
+ 一つ次の項目を表示
+ </summary>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.TextInput">
+ <summary>
+ データ表示
+ </summary>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.getBuhinNM(System.String,System.String)">
+ <summary>
+ 部品名取得
+ </summary>
+ <param name="strBuhinNo">部品番号</param>
+ <param name="strSyukkaDt">出荷日</param>
+ <returns></returns>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.InitControl(System.Boolean)">
+ <summary>
+ 全コントロールの初期化処理
+ </summary>
+ <param name="onFormLoad">Form Load時の呼び出し</param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.dispGazou">
+ <summary>
+ 画像の表示
+ </summary>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.getGazouFiles(System.String,System.String,System.String,System.String)">
+ <summary>
+ 画像ファイルを取得
+ </summary>
+ <param name="strBuhinNo">部品番号</param>
+ <param name="strReadDate">読込日</param>
+ <param name="strReadtime">読込時刻</param>
+ <param name="strJutyuNo">自社受注番号</param>
+ <returns></returns>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_010.SaveFileDialog1_FileOk(System.Object,System.ComponentModel.CancelEventArgs)">
+ <summary>
+ 指定された形式で画像ファイルを保存する
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:SyukkaRef.SyukkaRef_001">
+ <summary>
+ データ取得IBR_SJK_S030, IBR_SJK_S040共通ロジック
+ </summary>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_001.GetShipResult(IBR_SKS_C001.IbrData,System.String,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.String,System.String,System.String)">
+ <summary>
+ 検索条件より出荷実績を検索する
+ </summary>
+ <param name="ibr">接続情報</param>
+ <param name="shukkaBasho">出荷場所</param>
+ <param name="yoteiDtSt">納入予定日開始</param>
+ <param name="yoteiDtEd">納入予定日終了</param>
+ <param name="sijiDtSt">納入指示日開始</param>
+ <param name="sijiDtEd">納入指示日終了</param>
+ <param name="toriCd">取引先</param>
+ <param name="bhnNo">部品番号</param>
+ <param name="strShukkaBashoNM">コンボボックスの出荷場所の選択テキスト</param>
+ <returns>出荷実績テーブル検索結果</returns>
+ <remarks>存在しない場合はNothingを返却する</remarks>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_001.getEnvValue(System.String,IBR_SKS_C001.IbrData)">
+ <summary>
+ 環境テーブルから画像ファイルの保存場所を取得
+ </summary>
+ <param name="key"></param>
+ <param name="ibr"></param>
+ <returns></returns>
+</member>
+<member name="F:SyukkaRef.SyukkaRef_000.dgvCount">
+ <summary>
+ [IN]出荷場所
+ </summary>
+</member>
+<member name="P:SyukkaRef.SyukkaRef_000.SearchCondition">
+ <summary>
+ 前回検索条件を保存する
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.InitControl(System.Boolean)">
+ <summary>
+ Formの初期化
+ </summary>
+ <param name="onFormLoad"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.BtnF2_Click(System.Object,System.EventArgs)">
+ <summary>
+ 表示クリア(F2)
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.BtnF7_Click(System.Object,System.EventArgs)">
+ <summary>
+ 詳細(F7)ボタン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.DGV_Detail_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ F7:詳細表示(ダブルクリック)
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.DGV_Detail_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F7:詳細表示(エンター)
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.BtnF9_Click(System.Object,System.EventArgs)">
+ <summary>
+ 実行(F9)ボタン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.BtnF12_Click(System.Object,System.EventArgs)">
+ <summary>
+ 終了(F12)ボタン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.SearchCondition_SettingControlValue(System.Windows.Forms.Control,System.ComponentModel.HandledEventArgs)">
+ <summary>
+ 出荷場所、取引先、部品番号の値が入力されたとき
+ </summary>
+ <param name="target"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.D_Yotei_SettingControlValue(System.Object,System.EventArgs)">
+ <summary>
+ 納入予定日(終了)の値が入力されたとき
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.D_Siji_SettingControlValue(System.Object,System.EventArgs)">
+ <summary>
+ 納入指示日(終了)の値が入力されたとき
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.checkConditon(System.Boolean)">
+ <summary>
+ 条件入力チェック
+ </summary>
+ <param name="blnMsg">エラーメッセージを表示するときはTrue</param>
+ <returns></returns>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.GamenHyojiSyori(System.Boolean,System.Boolean)">
+ <summary>
+ 検索結果表示
+ </summary>
+ <param name="isButton"></param>
+ <param name="isForce"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.checkDateTerm(IBR_SJK_C020.ComDateSjk,IBR_SJK_C020.ComDateSjk,System.String,System.String[]@)">
+ <summary>
+ 日付の大小チェック
+ </summary>
+ <param name="dtSt">日付開始のコントロール</param>
+ <param name="dtEd">日付終了のコントロール</param>
+ <param name="strNM">項目名</param>
+ <param name="strWk">入力された日付</param>
+ <returns></returns>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.ComDataGridViewSjk1_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ 一覧のダブルクリックイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:SyukkaRef.SyukkaRef_000.ComDataGridViewSjk1_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ 一覧のKeyDownイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>

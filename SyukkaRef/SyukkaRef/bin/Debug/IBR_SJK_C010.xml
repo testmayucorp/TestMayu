@@ -1,0 +1,735 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IBR_SJK_C010
+</name>
+</assembly>
+<members>
+<member name="T:IBR_SJK_C010.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:IBR_SJK_C010.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:IBR_SJK_C010.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:IBR_SJK_C010.IBR_SJK_C010_001">
+ <summary>
+ EXCELラッパークラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C010.IBR_SJK_C010_001.HighSpeedMode">
+ <summary>
+ 高速化対応切り替えスイッチ
+ </summary>
+ <value></value>
+ <returns>True:有効　False:無効</returns>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.m_QueueDic">
+ <summary>
+ 高速モード時、書き込みデータをストアする辞書
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.pageCnt">
+ <summary>ページ数のカウンタ</summary>
+ <remarks>1024ページ以上作成できない制限のため</remarks>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.mdicCellFormat">
+ <summary>
+ セルの書式設定情報
+ </summary>
+</member>
+<member name="T:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation">
+ <summary>
+ リスト列の合計行での計算の種類を指定します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationNone">
+ <summary>計算しない</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationSum">
+ <summary>合計</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationAverage">
+ <summary>平均</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationCount">
+ <summary>空でないセルの個数</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationCountNums">
+ <summary>数値が入力されたセルの個数</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationMax">
+ <summary>最大値</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationMin">
+ <summary>最小値</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationStdDev">
+ <summary>標準偏差</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationVar">
+ <summary>分散</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation.xlTotalsCalculationCustom">
+ <summary>ユーザ定義</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlHorizontalAlignment.xlCenter">
+ <summary>中央</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlHorizontalAlignment.xlDistributed">
+ <summary>均等割り付け</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlHorizontalAlignment.xlJustify">
+ <summary>両端揃え</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlHorizontalAlignment.xlLeft">
+ <summary>左</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlHorizontalAlignment.xlRight">
+ <summary>右</summary>
+</member>
+<member name="T:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType">
+ <summary>
+ 貼り付け書式
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteAll">
+ <summary>すべて</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteFormulas">
+ <summary>数式</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteValues">
+ <summary>値</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteFormats">
+ <summary>書式</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteComments">
+ <summary>コメント</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteValidation">
+ <summary>入力規則(2002以降)</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteAllExceptBorders">
+ <summary>罫線を除く全て</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteColumnWidths">
+ <summary>列幅(2002以降)</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteFormulasAndNumberFormats">
+ <summary>数式と数値の書式(2002以降)</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteValuesAndNumberFormats">
+ <summary>値と数値の書式(2002以降)</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteAllUsingSourceTheme">
+ <summary>コピー元のテーマを使用して全て貼り付け(2007以降)</summary>
+</member>
+<member name="F:IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType.xlPasteAllMergingConditionalFormats">
+ <summary>全ての結合されている条件付き書式(2010以降)</summary>
+</member>
+<member name="T:IBR_SJK_C010.IBR_SJK_C010_001.CellFrmt">
+ <summary>
+ セルの書式設定項目
+ </summary>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.AllowSetForegroundWindow(System.Int32)">
+ <summary>
+ 引数プロセスの最前面表示を許可する
+ </summary>
+ <param name="dwProcessId">最前面表示を許可するプロセスID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.GetWindowThreadProcessId(System.IntPtr,System.Int32@)">
+ <summary>
+ 引数ウインドウのプロセスIDを取得する
+ </summary>
+ <param name="hWnd">[IN]ウインドウハンドル</param>
+ <param name="lpdwProcessId">[OUT]プロセスID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.#ctor">
+ <summary>
+ クラス生成時
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.Dispose(System.Boolean)">
+ <summary>
+ Dispose処理
+ </summary>
+ <param name="disposing"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.Clear(System.Boolean)">
+ <summary>
+ オブジェクト解放処理
+ </summary>
+ <param name="closes">解放時に閉じる</param>
+ <remarks>※このクラスを解放する前に呼び出すこと</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.Init">
+ <summary>
+ 初期化(ファイルをオープンしない時用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.InitForJoin">
+ <summary>
+ 初期化(ファイルをオープンしない時用)
+ ※横スクロールバー対応なし。(Joinなどxlsxからxlsのコピーエラーが出る場合に使用する)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.Open(System.Object)">
+ <summary>
+ ファイルオープン処理
+ </summary>
+ <param name="Q_strFilePath">(IN)開くファイルのパス</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SheetCopy(System.String,System.String)">
+ <summary>
+ シートコピー(別ファイルから)
+ </summary>
+ <param name="Q_sFilePath">(IN)コピー元ファイルパス</param>
+ <param name="Q_sSheetName">(IN)コピー元シート名</param>
+ <returns>(OT)コピー先のシート番号</returns>
+ <remarks>※コピー元の前にコピーする</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SheetCopy(System.String,System.Int32)">
+ <summary>
+ シートコピー(別ファイルから)
+ </summary>
+ <param name="Q_sFilePath">(IN)コピー元ファイルパス</param>
+ <param name="Q_iSheetNo">(IN)コピー元シート番号(1から始まる)</param>
+ <returns>(OT)コピー先のシート番号</returns>
+ <remarks>※コピー元の前にコピーする</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SheetsCopy(System.String,System.Boolean)">
+ <summary>
+ シートコピー(別ファイルから)
+ </summary>
+ <param name="Q_sFilePath">(IN)コピー元ファイルパス</param>
+ <param name="isBefore">True:コピー先シートの前に挿入、False:コピー先シートの後ろに挿入</param>
+ <remarks>※コピー元の後にコピーする</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SheetNameSet(System.Int32,System.String)">
+ <summary>
+ シート名設定
+ </summary>
+ <param name="Q_nIdx">(IN)シート番号</param>
+ <param name="Q_sSheetName">(IN)シート名</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SheetActive(System.Int32)">
+ <summary>
+ 編集シート設定
+ </summary>
+ <param name="Q_nIdx">(IN)シート番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SheetDelete(System.Int32)">
+ <summary>
+ シート削除(シート番号)
+ </summary>
+ <param name="Q_sSheetIdx">(IN)シート番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.GetSheetCnt">
+ <summary>
+ シート数取得
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.ValueSet(System.String,System.Object)">
+ <summary>
+ EXCELに出力
+ </summary>
+ <param name="Q_sCell">(IN)出力先セル(例："A1")</param>
+ <param name="Q_oValue">(IN)出力する値</param>
+ <remarks>※先に「編集シート設定」を行っておくこと</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.ValueSet(System.String,System.Object[0:,0:])">
+ <summary>
+ EXCELに出力(二次元配列)
+ </summary>
+ <param name="Q_sCell">(IN)出力先セル範囲(例："A1:B2")</param>
+ <param name="Q_oValue">(IN)出力する値(二次元配列)</param>
+ <remarks>※先に「編集シート設定」を行っておくこと</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.Display">
+ <summary>
+ EXCEL表示(保存しない場合用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.HeaderReplace(System.String,System.String,System.Int32)">
+ <summary>
+ ヘッダの値を置き換えます
+ </summary>
+ <param name="Q_SearchValue">検索文字列</param>
+ <param name="Q_ReplaceValue">置換文字列</param>
+ <param name="position">0:LeftHeader, 1:CenterHeader, 2:RightHeader</param>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetLine(System.String,System.Int32)">
+ <summary>
+ 罫線
+ </summary>
+ <param name="Q_sCell">(IN)出力先セル範囲(例："A1:B2")</param>
+ <param name="bordersIndex">罫線の種類 "https://msdn.microsoft.com/ja-jp/library/office/ff835915.aspx"</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.BorderAround(System.String)">
+ <summary>
+ 範囲の外側を囲む罫線を引く
+ </summary>
+ <param name="Q_sCell">(IN)出力先セル範囲(例："A1:B2")</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SelectCell(System.String)">
+ <summary>
+ セルを選択する
+ </summary>
+ <param name="cell">セルのアドレス(例:A1)</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SaveAs(System.String)">
+ <summary>
+ 上書き保存処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.ToA1(System.String)">
+ <summary>
+ R1C1形式のアドレスをA1形式に変換する
+ </summary>
+ <param name="r1c1">R1C1形式のアドレス</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.PageBreak(System.String)">
+ <summary>
+ 改ページを挿入します
+ </summary>
+ <param name="Q_sCell">改ページ位置</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.GetCurrentRegionValues(System.String)">
+ <summary>
+ cellの含まれる表の範囲の値を取得
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.GetSheetName">
+ <summary>
+ シート名を返却する
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.ToListObject(System.String,System.Int32,System.Boolean,IBR_SJK_C010.IBR_SJK_C010_001.XlTotalsCalculation[])">
+ <summary>
+ 選択範囲をテーブルに変換します。
+ </summary>
+ <param name="Q_sCell">テーブル化するセル範囲(例："A1:B2")</param>
+ <param name="hasHeaders">先頭行がヘッダの指定(0:Auto, 1:先頭行ヘッダ, 2:なし)</param>
+ <param name="showTotals">集計行を表示します</param>
+ <param name="totalsCalculations">集計行の計算式(添え字1から始まる配列で指定すること)</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetPrintArea(System.String)">
+ <summary>
+ 印刷範囲設定
+ </summary>
+ <param name="Q_sCell">印刷範囲(例:A1:B2)</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.GetPageRowCount(System.Int32)">
+ <summary>
+ 1ページあたりの行数を取得する
+ </summary>
+ <returns>行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetNumberFormat(System.String,System.String)">
+ <summary>
+ セル範囲に数値書式を設定します。
+ </summary>
+ <param name="Q_sCell">セル範囲(例:A1:E3)</param>
+ <param name="numberFormat">数値書式(例:#,##0_ ;[赤]-#,##0)</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetHorizontalAlignment(System.String,IBR_SJK_C010.IBR_SJK_C010_001.XlHorizontalAlignment)">
+ <summary>
+ セル範囲に配置を設定します。
+ </summary>
+ <param name="Q_sCell">セル範囲(例:A1:E3)</param>
+ <param name="align">配置</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetWrapText(System.String,System.Boolean)">
+ <summary>
+ セルの文字列の折り返し表示の設定
+ </summary>
+ <param name="Q_sCell"></param>
+ <param name="blnWrapText"></param>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetItalicBold(System.String,System.Boolean,System.Boolean)">
+ <summary>
+ 文字を斜体や太字にする
+ </summary>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.setFontSize(System.String,System.Int32)">
+ <summary>
+ 文字のフォントサイズを設定する
+ </summary>
+ <param name="Q_sCell"></param>
+ <param name="intFontSize"></param>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.setFontNM(System.String,System.String)">
+ <summary>
+ 文字のフォント名を設定する
+ </summary>
+ <param name="Q_sCell"></param>
+ <param name="strFontNM"></param>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetForeColor(System.String,System.Drawing.Color)">
+ <summary>
+ 文字の前景色を設定する
+ </summary>
+ <param name="Q_sCell"></param>
+ <param name="fcolor"></param>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.MemCellFormat(System.String,System.String,System.Int32,System.Boolean,System.Boolean,IBR_SJK_C010.IBR_SJK_C010_001.XlHorizontalAlignment)">
+ <summary>
+ セルの書式設定情報を記憶
+ </summary>
+ <param name="Q_sCell">セル範囲(例:A1:E3)</param>
+ <param name="strFontNm">フォント名</param>
+ <param name="intFontSz">フォントサイズ</param>
+ <param name="blnItalic">斜体のときはTrue</param>
+ <param name="blnBold">太字のときはTrue</param>
+ <param name="xlHori">水平方向の文字配置</param>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetCellFormat">
+ <summary>
+ セルの書式設定を行う
+ </summary>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.CopyRange(System.String,System.String)">
+ <summary>
+ コピー操作
+ </summary>
+ <param name="Q_sSrcCell">コピー元セル範囲(例:A1:E3)</param>
+ <param name="Q_sDstCell">コピー先セル範囲(例:A1:E3)</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.CopyRange(System.String,System.String,IBR_SJK_C010.IBR_SJK_C010_001.XlPasteType)">
+ <summary>
+ 書式指定付きのコピー操作
+ </summary>
+ <param name="Q_sSrcCell">コピー元セル範囲(例:A1:E3)</param>
+ <param name="Q_sDstCell">コピー先セル範囲(例:A1:E3)</param>
+ <param name="pasteType">貼付書式</param>
+ <remarks>
+ PasteSpecialは失敗する可能性があるため、何度かリトライする
+ </remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.UnionRanges(System.String)">
+ <summary>
+ 複数範囲をUnionしたRangeオブジェクトを返却する
+ </summary>
+ <param name="Q_sRanges">範囲文字列(例:A1,B2:B3,C9)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.PrintWorkSheet(System.String)">
+ <summary>
+ ワークシートを印刷する
+ </summary>
+ <param name="printerName">印刷に使用するプリンター名</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.Flush">
+ <summary>
+ キューの内容を出力する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.CutCopyMode">
+ <summary>
+ 切り取りモードまたはコピーモードの解除
+ </summary>
+ <remarks>切り取りモードまたはコピーモードを解除し、点滅している枠線を取り除きます。</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.SetBackColor(System.String,System.Drawing.Color)">
+ <summary>
+ セル範囲に背景色を設定します
+ </summary>
+ <param name="Q_sRanges">セル範囲</param>
+ <param name="color">背景色</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.RunVBA(System.String,System.String)">
+ <summary>
+ VBAを実行します
+ </summary>
+ <param name="functionName">実行する関数名</param>
+ <param name="argument">引数</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_001.CopyNew">
+ <summary>
+ 新規ブックシートをコピー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:IBR_SJK_C010.IBR_SJK_C010_000">
+ <summary>
+ EXCEL帳票出力クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C010.IBR_SJK_C010_000.HighSpeedMode">
+ <summary>
+ 高速化対応切り替えスイッチ
+ </summary>
+ <value></value>
+ <returns>True:有効　False:無効</returns>
+ <remarks></remarks>
+</member>
+<member name="P:IBR_SJK_C010.IBR_SJK_C010_000.mIsSkipLine">
+ <summary>
+ 罫線描画スキップスイッチ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.Show(System.Data.DataTable,System.Data.DataTable,System.String,System.Int32)">
+ <summary>
+ sourceの内容をtemplatePathのEXCEL帳票に出力してEXCEL画面を表示します。
+ </summary>
+ <param name="header">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="detail">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.Show(System.Data.DataTable,System.Data.DataTable,System.String,System.Int32,System.Boolean)">
+ <summary>
+ sourceの内容をtemplatePathのEXCEL帳票に出力してEXCEL画面を表示します。
+ </summary>
+ <param name="header">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="detail">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <param name="isSkipLine">True:罫線の描画をスキップします</param>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.Show(System.Data.DataTable[],System.Data.DataTable[],System.String,System.Int32[])">
+ <summary>
+ sourceの内容をtemplatePathのEXCEL帳票に出力してEXCEL画面を表示します。(複数シートのテンプレート対応)
+ </summary>
+ <param name="headers">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="details">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.ShowVBA(System.Data.DataTable,System.String,System.String)">
+ <summary>
+ sourceの内容をtemplatePathのEXCELの「データ」シートに出力して帳票出力用のVBA(ExecutePrintメソッド)を実行します。
+ </summary>
+ <param name="source">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="argument">VBAの実行時引数</param>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.Print(System.Data.DataTable,System.Data.DataTable,System.String,System.Int32,System.String)">
+ <summary>
+ sourceの内容をtemplatePathのEXCEL帳票に出力して保存します。
+ </summary>
+ <param name="header">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="detail">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <param name="savePath">保存パス</param>
+ <returns>保存したファイルのフルパス(拡張子を補完した値)</returns>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.Print(System.Data.DataTable,System.Data.DataTable,System.String,System.Int32,System.String,System.Boolean)">
+ <summary>
+ sourceの内容をtemplatePathのEXCEL帳票に出力して保存します。
+ </summary>
+ <param name="header">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="detail">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <param name="savePath">保存パス</param>
+ <param name="isSkipLine">True:罫線の描画をスキップします</param>
+ <returns>保存したファイルのフルパス(拡張子を補完した値)</returns>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.Print(System.Data.DataTable[],System.Data.DataTable[],System.String,System.Int32[],System.String)">
+ <summary>
+ sourceの内容をtemplatePathのEXCEL帳票に出力して保存します。(複数シートのテンプレート対応)
+ </summary>
+ <param name="headers">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="details">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <param name="savePath">保存パス</param>
+ <returns>保存したファイルのフルパス(拡張子を補完した値)</returns>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.PrintVBA(System.Data.DataTable,System.String,System.String,System.String)">
+ <summary>
+ sourceの内容をtemplatePathのEXCELの「データ」シートに出力して帳票出力用のVBA(ExecutePrintメソッド)を実行します。
+ </summary>
+ <param name="source">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="savePath">保存パス</param>
+ <param name="argument">VBAの実行時引数</param>
+ <returns>保存したファイルのフルパス(拡張子を補完した値)</returns>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.Read(System.String,System.String,System.Boolean)">
+ <summary>
+ EXCELファイルの内容をDataTableに格納して返却します。<BR/>
+ 1Sheet目のみが対象です。
+ </summary>
+ <param name="filePath">EXCELファイルのパス</param>
+ <param name="startCell">データの開始位置(例:A1)</param>
+ <param name="hasHeader">True:1行目をヘッダ行として処理する</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.Join(System.String,System.String[])">
+ <summary>
+ 複数のEXCELファイルを結合して表示or保存します。
+ </summary>
+ <param name="savePath">保存先のパス　未指定の場合は表示を行う</param>
+ <param name="books">ブックのパス</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.PrintOut(System.String,System.String)">
+ <summary>
+ EXCELファイルを印刷します
+ </summary>
+ <param name="filePath">ファイルのパス</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.PrintMain(System.Data.DataTable,System.Data.DataTable,System.String,System.Int32,System.String)">
+ <summary>
+ sourceの内容をtemplatePathのEXCEL帳票に出力して保存します。
+ </summary>
+ <param name="header">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="detail">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <returns>保存したファイルのフルパス(拡張子を補完した値)</returns>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.PrintMain(System.Data.DataTable[],System.Data.DataTable[],System.String,System.Int32[],System.String)">
+ <summary>
+ sourceの内容をtemplatePathのEXCEL帳票に出力して保存します。(複数シートのテンプレート対応)
+ </summary>
+ <param name="headers">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="details">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <returns>保存したファイルのフルパス(拡張子を補完した値)</returns>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.PrintMainVBA(System.Data.DataTable,System.String,System.String,System.String)">
+ <summary>
+ sourceの内容をtemplatePathのEXCELの「データ」シートに出力して帳票出力用のVBA(ExecutePrintメソッド)を実行します。
+ </summary>
+ <param name="source">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="argument">VBAの実行時引数</param>
+ <returns>保存したファイルのフルパス(拡張子を補完した値)</returns>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.CheckParameter(IBR_SJK_C010.IBR_SJK_C010_001,System.Data.DataTable,System.Data.DataTable,System.String,System.Int32,System.String)">
+ <summary>
+ 入力パラメータ・EXCELのバージョンをチェックします
+ </summary>
+ <param name="clsExcel">EXCELラッパークラス</param>
+ <param name="header">ヘッダ部データColumnがEXCELのA列～に対応</param>
+ <param name="detail">明細データ部ColumnがEXCELのA列～に対応</param>
+ <param name="templatePath">帳票テンプレート(.xls)の配置場所を指定</param>
+ <param name="startRow">データ開始行番号</param>
+ <remarks>source.TableNameがシート名になります</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.PrintHeader(IBR_SJK_C010.IBR_SJK_C010_001,System.Data.DataTable)">
+ <summary>
+ ヘッダ部データ出力
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.PrintBody(IBR_SJK_C010.IBR_SJK_C010_001,System.Data.DataTable,System.Int32)">
+ <summary>
+ ボディ部データ出力
+ </summary>
+ <param name="clsExcel"></param>
+ <param name="body">ボディ部</param>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.AfterPrintBody(IBR_SJK_C010.IBR_SJK_C010_001,System.Data.DataTable,System.Int32)">
+ <summary>
+ ボディ部データ出力後処理
+ </summary>
+ <param name="clsExcel"></param>
+ <remarks>既定では何もしない</remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.DataTableToArray(System.Data.DataTable)">
+ <summary>
+ DataTableを2次元配列に変換します
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.ArrayToDataTable(System.Object[0:,0:],System.Boolean)">
+ <summary>
+ 2次元配列をDataTableに変換します
+ </summary>
+ <param name="array"></param>
+ <param name="hasHeader">True:1行目をヘッダとして処理する</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBR_SJK_C010.IBR_SJK_C010_000.CalcRowsPerPage(System.String,System.Int32)">
+ <summary>
+  印刷可能行数取得
+ </summary>
+ <param name="templatePath">テンプレートパス</param>
+ <param name="startRow">エクセルのデータ入力開始行</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IBR_SJK_M010
+</name>
+</assembly>
+<members>
+<member name="P:IBR_SJK_M010.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:IBR_SJK_M010.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:IBR_SJK_M010.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:IBR_SJK_M010.IBR_SJK_M010_001.nissubetukeisan(IBR_SJK_M010.IBR_SJK_M010_001.Parameter@,System.Decimal@,System.Decimal@,System.Decimal@,System.Decimal@,System.Decimal@,IBR_SKS_C001.IbrData@)">
+	<summary>
+ 日数別計算サブ
+ </summary>
+	<param name="parameter">入出力パラメータ</param>
+	<param name="w_seisunissu"></param>
+	<param name="w_senkonissu1"></param>
+	<param name="w_senkonissu2"></param>
+	<param name="w_syosunissu"></param>
+	<param name="w_sijinouki"></param>
+	<param name="ibr">DB接続設定</param>
+	<returns>処理結果がエラー(1)か正常終了(0)か</returns>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_M010.IBR_SJK_M010_001.yobi_syukkabikeisan(IBR_SKS_C001.IbrData,IBR_SJK_M010.IBR_SJK_M010_001.Parameter@,System.Decimal,System.Decimal@,System.Boolean@)">
+	<summary>
+ カレンダマスタの取得と曜日指定の調整
+ </summary>
+	<param name="ibr">DB接続設定</param>
+	<param name="parameter">入出力パラメータ</param>
+	<param name="w_youbisitei">ワーク.曜日指定</param>
+	<param name="w_sijinouki">ワーク.指示納期</param>
+	<param name="rc">次の処理へ進んでよいかのリターンコード</param>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_M010.IBR_SJK_M010_001.datouseicheck(IBR_SJK_M010.IBR_SJK_M010_001.Parameter@,System.Decimal@,IBR_SKS_C001.IbrData,System.Decimal)">
+	<summary>
+ 妥当性チェックサブ
+ </summary>
+	<param name="parameter">入出力パラメータ</param>
+	<param name="w_seisunissu">ワーク.整数日数</param>
+	<param name="ibr">DB接続設定</param>
+	<param name="w_sijinouki">ワーク.指示納期</param>
+	<returns>リターンコード</returns>
+	<remarks>処理終了0,処理続行1</remarks>
+</member><member name="M:IBR_SJK_M010.IBR_SJK_M010_001.senkokekkahiduketyousei(System.Decimal@,IBR_SJK_M010.IBR_SJK_M010_001.Parameter@,IBR_SKS_C001.IbrData,System.Decimal)">
+	<summary>
+ 先行結果日付の調整サブ
+ </summary>
+	<param name="w_seisunissu">ワーク.整数日数</param>
+	<param name="parameter">入出力パラメータ</param>
+	<param name="ibr">DB接続設定</param>
+	<param name="w_sijinouki">ワーク.指示納期</param>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_M010.IBR_SJK_M010_001.syukkabikeisan(IBR_SJK_M010.IBR_SJK_M010_001.Parameter@,System.Decimal@,System.Decimal@,System.Decimal@,System.Int32,IBR_SKS_C001.IbrData,System.Decimal)">
+	<summary>
+ 取引先Aでの出荷日の計算サブ
+ </summary>
+	<param name="parameter">入出力パラメータ</param>
+	<param name="w_seisunissu">ワーク.整数日数</param>
+	<param name="w_senkonissu">ワーク.先行日数</param>
+	<param name="w_syosunissu">ワーク.小数日数</param>
+	<param name="hantei">先行結果時区と先行結果日付が1or2であることの判定パラメータ</param>
+	<param name="ibr">DB接続設定</param>
+	<param name="w_sijinouki">ワーク.指示納期</param>
+	<remarks></remarks>
+</member><member name="T:IBR_SJK_M010.IBR_SJK_M010_001.hidukeprm">
+	<summary>
+ 日付計算サブ用パラメータ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IBR_SJK_M010.IBR_SJK_M010_001.hidukekeisan(IBR_SJK_M010.IBR_SJK_M010_001.hidukeprm,IBR_SKS_C001.IbrData,IBR_SJK_M010.IBR_SJK_M010_001.Parameter@)">
+	<summary>
+ 日付計算サブ
+ </summary>
+	<param name="hidukesubprm">日付計算用パラメータ</param>
+	<param name="ibr">DB接続設定</param>
+	<param name="parameter">入出力パラメータ</param>
+	<returns>日付計算用パラメータ</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
